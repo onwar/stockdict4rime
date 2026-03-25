@@ -1,4 +1,4 @@
-# rime-a-stock
+# stockdict4rime
 
 自动采集沪深 A 股股票名称，生成供 [雾凇拼音 rime-ice](https://github.com/iDvel/rime-ice) 使用的词库，并通过 launchd 自动同步到 macOS 鼠须管输入法。
 
