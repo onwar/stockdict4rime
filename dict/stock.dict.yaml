@@ -2,9 +2,9 @@
 # encoding: utf-8
 #
 # 股票名称词库（沪深A股 + 台湾 + 美股）
-# 数据来源：东方财富 / akshare
+# 数据来源：新浪财经 / akshare
 # 更新时间：2026-03-25
-# 股票数量：0
+# 股票数量：31
 #
 # 使用方法：在 rime-ice 的 cn_dicts/ 目录下放置此文件
 # 并在 rime_ice.dict.yaml 的 import_tables 中添加：
@@ -16,4 +16,34 @@ version: "2026-03-25"
 sort: by_weight
 ...
 
-
+ALPS O鈥橲hares International Developed Quality Dividend ETF	ALPS O huo xi hares International Developed Quality Dividend ETF	1
+Almacenes 脡xito SA	Almacenes  ting xito SA	1
+BBVA Banco Franc茅s SA	BBVA Banco Franc mao s SA	1
+Bob鈥檚 Discount Furniture, Inc.	Bob huo chu  Discount Furniture, Inc.	1
+Companhia Energ茅tica de Minas Gerais SA	Companhia Energ mao tica de Minas Gerais SA	1
+Compa帽铆a Cervecer铆as Unidas SA	Compa mao mao a Cervecer mao as Unidas SA	1
+Compa帽铆a de Minas Buenaventura SAA	Compa mao mao a de Minas Buenaventura SAA	1
+Controladora Vuela Compa帽铆a de Aviaci贸n SAB de CV	Controladora Vuela Compa mao mao a de Aviaci mao n SAB de CV	1
+Corporaci贸n Inmobiliaria Vesta SAB de CV	Corporaci mao n Inmobiliaria Vesta SAB de CV	1
+Dar茅 Bioscience, Inc.	Dar mao  Bioscience, Inc.	1
+Enel Am茅ricas SA	Enel Am mao ricas SA	1
+Enel Generaci贸n Chile SA	Enel Generaci mao n Chile SA	1
+Entr茅e Resources Ltd.	Entr mao e Resources Ltd.	1
+Falcon鈥檚 Beyond Global, Inc.	Falcon huo chu  Beyond Global, Inc.	1
+GOL Linhas A茅reas Inteligentes SA	GOL Linhas A mao reas Inteligentes SA	1
+Getnet Adquir锚ncia e Servi莽os para Meios de Pagamento SA	Getnet Adquir mao ncia e Servi mang os para Meios de Pagamento SA	1
+Grupo Aerom茅xico SAB de CV	Grupo Aerom mao xico SAB de CV	1
+Grupo Aeroportuario del Pac铆fico SAB de CV	Grupo Aeroportuario del Pac mao fico SAB de CV	1
+Halc贸n Resources Corp.	Halc mao n Resources Corp.	1
+Invesco ESG S&P 500庐 Equal Weight ETF	Invesco ESG S&P 500 lu  Equal Weight ETF	1
+Ita煤 Unibanco Holding SA	Ita mei  Unibanco Holding SA	1
+Loma Negra Compa帽铆a Industrial Argentina SA	Loma Negra Compa mao mao a Industrial Argentina SA	1
+Pampa Energ铆a SA	Pampa Energ mao a SA	1
+Petr贸leo Brasileiro SA	Petr mao leo Brasileiro SA	1
+SPDR庐 Bloomberg SASB US Large Cap Growth ESG Select ETF	SPDR lu  Bloomberg SASB US Large Cap Growth ESG Select ETF	1
+Schr枚dinger, Inc.	Schr mei dinger, Inc.	1
+Telef贸nica SA	Telef mao nica SA	1
+The Est茅e Lauder Companies, Inc.	The Est mao e Lauder Companies, Inc.	1
+Ultrapar Participa莽oes SA	Ultrapar Participa mang oes SA	1
+Vi帽a Concha y Toro SA	Vi mao a Concha y Toro SA	1
+脝terna Zentaris, Inc.	heng terna Zentaris, Inc.	1
