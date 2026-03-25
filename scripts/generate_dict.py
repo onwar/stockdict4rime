@@ -45,7 +45,7 @@ def fetch_stocks() -> list[tuple[str, str]]:
     print(f"  科创板：{len(sh_star)} 条")
 
     print("正在获取深市 A 股...")
-    sz = ak.stock_info_sz_name_code(indicator="A股列表")
+    sz = ak.stock_info_sz_name_code(symbol="A股列表")
     print(f"  深市 A 股：{len(sz)} 条")
 
     # 统一取股票名称列
