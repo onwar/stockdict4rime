@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  文件名：com.user.rime-stock-sync.plist
+  安装方式：
+    cp com.user.rime-stock-sync.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.user.rime-stock-sync.plist
+
+  卸载方式：
+    launchctl unload ~/Library/LaunchAgents/com.user.rime-stock-sync.plist
+    rm ~/Library/LaunchAgents/com.user.rime-stock-sync.plist
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.rime-stock-sync</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <!-- 请将下方路径替换为你实际存放 sync_rime_stock.sh 的位置 -->
+        <string>/Users/YOUR_USERNAME/rime-a-stock/sync_rime_stock.sh</string>
+    </array>
+
+    <!-- 每天 09:00 运行 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- 若错过触发时间（如 Mac 关机），下次唤醒后立即补跑 -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/rime-stock-sync.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/tmp/rime-stock-sync.err</string>
+
+    <!-- 网络可用后才运行 -->
+    <key>NetworkState</key>
+    <true/>
+</dict>
+</plist>
