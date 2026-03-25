@@ -4,7 +4,7 @@
 # 股票名称词库（沪深北A股 + 台湾上市/上柜）
 # 数据来源：新浪财经 / 台湾证交所 / 柜买中心
 # 更新时间：2026-03-25
-# 股票数量：7818
+# 股票数量：7819
 #
 # 使用方法：在 rime-ice 的 cn_dicts/ 目录下放置此文件
 # 并在 rime_ice.dict.yaml 的 import_tables 中添加：
@@ -115,7 +115,7 @@ FT投资级债20+	FT tou zi ji zhai 20+	1
 FT洁净能源	FT jie jing neng yuan	1
 FT金融债10+	FT jin rong zhai 10+	1
 GQY视讯	GQY shi xun	1
-N宏明	N hong ming	1
+N宏明电子	N hong ming dian zi	1
 N视涯	N shi ya	1
 ST东尼	ST dong ni	1
 ST东时	ST dong shi	1
@@ -222,7 +222,7 @@ TCL科技	TCL ke ji	1
 七一二	qi yi er	1
 七丰精工	qi feng jing gong	1
 七彩化学	qi cai hua xue	1
-万 科Ａ	wan   ke Ａ	1
+万  科Ａ	wan    ke Ａ	1
 万东医疗	wan dong yi liao	1
 万丰奥威	wan feng ao wei	1
 万丰股份	wan feng gu fen	1
@@ -1022,6 +1022,7 @@ TCL科技	TCL ke ji	1
 九丰能源	jiu feng neng yuan	1
 九典制药	jiu dian zhi yao	1
 九华旅游	jiu hua lv you	1
+九号公司	jiu hao gong si	1
 九安医疗	jiu an yi liao	1
 九州一轨	jiu zhou yi gui	1
 九州通	jiu zhou tong	1
@@ -2149,8 +2150,8 @@ TCL科技	TCL ke ji	1
 卓郎智能	zhuo lang zhi neng	1
 卓锦股份	zhuo jin gu fen	1
 单井	dan jing	1
+南  玻Ａ	nan    bo Ａ	1
 南 京 港	nan   jing   gang	1
-南 玻Ａ	nan   bo Ａ	1
 南亚	nan ya	1
 南亚新材	nan ya xin cai	1
 南亚科	nan ya ke	1
@@ -3887,7 +3888,7 @@ TCL科技	TCL ke ji	1
 弘煜科	hong yu ke	1
 弘裕	hong yu	1
 弘讯科技	hong xun ke ji	1
-张 裕Ａ	zhang   yu Ａ	1
+张  裕Ａ	zhang    yu Ａ	1
 张家港行	zhang jia gang xing	1
 张小泉	zhang xiao quan	1
 张江高科	zhang jiang gao ke	1
@@ -4792,7 +4793,7 @@ TCL科技	TCL ke ji	1
 柏诚股份	bai cheng gu fen	1
 柘中股份	zhe zhong gu fen	1
 柯力传感	ke li chuan gan	1
-柳 工	liu   gong	1
+柳    工	liu      gong	1
 柳化股份	liu hua gu fen	1
 柳药集团	liu yao ji tuan	1
 柳钢股份	liu gang gu fen	1
@@ -5619,7 +5620,7 @@ TCL科技	TCL ke ji	1
 物产中大	wu chan zhong da	1
 物产环能	wu chan huan neng	1
 物产金轮	wu chan jin lun	1
-特 力Ａ	te   li Ａ	1
+特  力Ａ	te    li Ａ	1
 特一药业	te yi yao ye	1
 特力	te li	1
 特升-KY	te sheng -KY	1
@@ -7724,7 +7725,7 @@ TCL科技	TCL ke ji	1
 高雄银甲特	gao xiong yin jia te	1
 魅视科技	mei shi ke ji	1
 鱼跃医疗	yu yue yi liao	1
-鲁 泰Ａ	lu   tai Ａ	1
+鲁  泰Ａ	lu    tai Ａ	1
 鲁信创投	lu xin chuang tou	1
 鲁北化工	lu bei hua gong	1
 鲁抗医药	lu kang yi yao	1
