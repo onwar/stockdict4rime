@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-采集沪深 A 股、台湾、美股股票名称，生成 RIME 格式词库
+采集沪深北 A 股、台湾股票名称，生成 RIME 格式词库
 输出文件：dict/stock.dict.yaml
 
-数据来源说明（均选用对境外 IP 友好的接口）：
-  - 沪深 A 股：新浪财经 stock_info_a_code_name
-  - 台湾股票：新浪财经 stock_tw_spot_em
-  - 美股：新浪财经 get_us_stock_name
+数据来源：
+  - 沪深北 A 股：stock_info_a_code_name（新浪，含沪深京三所，境外可访问）
+                 备用：stock_zh_a_spot（新浪实时行情，含名称列）
+  - 台湾股票：  stock_tw_spot_em（东方财富台股行情）
 """
 
 import os
@@ -21,8 +21,8 @@ HEADER_TEMPLATE = """\
 # Rime dictionary
 # encoding: utf-8
 #
-# 股票名称词库（沪深A股 + 台湾 + 美股）
-# 数据来源：新浪财经 / akshare
+# 股票名称词库（沪深北A股 + 台湾）
+# 数据来源：新浪财经 / 东方财富 via akshare
 # 更新时间：{date}
 # 股票数量：{count}
 #
@@ -58,52 +58,53 @@ def filter_names(raw: list[str]) -> list[str]:
 
 
 def fetch_cn_stocks() -> list[str]:
-    """沪深 A 股：新浪财经接口，返回全部 A 股代码和名称"""
-    print("正在获取沪深 A 股（新浪财经）...")
+    """
+    沪深北 A 股，优先用 stock_info_a_code_name（轻量，仅返回代码+名称）
+    失败则备用 stock_zh_a_spot（新浪实时行情，含名称列）
+    """
+    print("正在获取沪深北 A 股...")
+
+    # 主接口：轻量代码名称表，含沪深京三所
     try:
         df = ak.stock_info_a_code_name()
+        # 列名为 'code' 和 'name'
         col = "name" if "name" in df.columns else df.columns[1]
         names = df[col].dropna().tolist()
-        print(f"  沪深 A 股：{len(names)} 条")
+        if len(names) > 100:
+            print(f"  [主接口] 沪深北 A 股：{len(names)} 条")
+            return names
+        print(f"  [主接口] 返回数据过少（{len(names)}条），尝试备用接口...")
+    except Exception as e:
+        print(f"  [主接口] 失败：{e}，尝试备用接口...")
+
+    time.sleep(2)
+
+    # 备用接口：新浪实时行情（含沪深京全部 A 股）
+    try:
+        df = ak.stock_zh_a_spot()
+        col = "名称" if "名称" in df.columns else df.columns[1]
+        names = df[col].dropna().tolist()
+        print(f"  [备用接口] 沪深北 A 股：{len(names)} 条")
         return names
     except Exception as e:
-        print(f"  [警告] 沪深 A 股获取失败：{e}")
+        print(f"  [备用接口] 失败：{e}")
         return []
 
 
 def fetch_tw_stocks() -> list[str]:
-    """台湾股票：新浪财经台股实时行情接口"""
-    print("正在获取台湾股票（新浪财经）...")
+    """台湾股票：东方财富台股实时行情"""
+    print("正在获取台湾股票...")
     try:
         df = ak.stock_tw_spot_em()
+        # 列名通常为 '名称' 或第2列
         col = "名称" if "名称" in df.columns else df.columns[1]
         names = df[col].dropna().tolist()
-        print(f"  台湾股票：{len(names)} 条")
+        # 过滤纯英文条目
+        names = [n for n in names if any('\u4e00' <= c <= '\u9fff' for c in str(n))]
+        print(f"  台湾股票（含中文名）：{len(names)} 条")
         return names
     except Exception as e:
         print(f"  [警告] 台湾股票获取失败：{e}")
-        return []
-
-
-def fetch_us_stocks() -> list[str]:
-    """美股：新浪财经接口，返回全部美股代码和名称"""
-    print("正在获取美股（新浪财经）...")
-    try:
-        df = ak.get_us_stock_name()
-        # 列名可能是 'name' 或中文
-        if "name" in df.columns:
-            col = "name"
-        elif "名称" in df.columns:
-            col = "名称"
-        else:
-            col = df.columns[1]
-        names = df[col].dropna().tolist()
-        # 过滤纯英文（只保留含中文字符的名称，减少词库噪音）
-        cn_names = [n for n in names if any('\u4e00' <= c <= '\u9fff' for c in str(n))]
-        print(f"  美股总计：{len(names)} 条，其中含中文名称：{len(cn_names)} 条")
-        return cn_names
-    except Exception as e:
-        print(f"  [警告] 美股获取失败：{e}")
         return []
 
 
@@ -131,9 +132,12 @@ if __name__ == "__main__":
 
     all_names.extend(fetch_cn_stocks())
     all_names.extend(fetch_tw_stocks())
-    all_names.extend(fetch_us_stocks())
 
     filtered = filter_names(all_names)
     print(f"\n全部去重过滤后共 {len(filtered)} 条")
+
+    if len(filtered) == 0:
+        print("错误：所有接口均未返回数据，请检查网络或接口状态")
+        raise SystemExit(1)
 
     generate_dict(filtered)
