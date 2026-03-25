@@ -4,25 +4,34 @@
 输出文件：dict/stock.dict.yaml
 
 数据来源：
-  - 沪深北 A 股：stock_info_a_code_name（新浪，含沪深京三所，境外可访问）
-                 备用：stock_zh_a_spot（新浪实时行情，含名称列）
-  - 台湾股票：  stock_tw_spot_em（东方财富台股行情）
+  - 沪深北 A 股：akshare stock_info_a_code_name（新浪，含沪深京三所）
+                 备用：stock_zh_a_spot（新浪实时行情）
+  - 台湾股票：  台湾证交所（TWSE）+ 柜买中心（TPEx）官方 JSON API，境外可访问
 """
 
 import os
 import time
 import datetime
+import requests
 import akshare as ak
 from pypinyin import lazy_pinyin, Style
 
 OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..", "dict", "stock.dict.yaml")
 
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0.0.0 Safari/537.36"
+    )
+}
+
 HEADER_TEMPLATE = """\
 # Rime dictionary
 # encoding: utf-8
 #
-# 股票名称词库（沪深北A股 + 台湾）
-# 数据来源：新浪财经 / 东方财富 via akshare
+# 股票名称词库（沪深北A股 + 台湾上市/上柜）
+# 数据来源：新浪财经 / 台湾证交所 / 柜买中心
 # 更新时间：{date}
 # 股票数量：{count}
 #
@@ -58,28 +67,24 @@ def filter_names(raw: list[str]) -> list[str]:
 
 
 def fetch_cn_stocks() -> list[str]:
-    """
-    沪深北 A 股，优先用 stock_info_a_code_name（轻量，仅返回代码+名称）
-    失败则备用 stock_zh_a_spot（新浪实时行情，含名称列）
-    """
+    """沪深北 A 股：新浪财经接口，含沪深京三所"""
     print("正在获取沪深北 A 股...")
 
-    # 主接口：轻量代码名称表，含沪深京三所
+    # 主接口：轻量代码名称表
     try:
         df = ak.stock_info_a_code_name()
-        # 列名为 'code' 和 'name'
         col = "name" if "name" in df.columns else df.columns[1]
         names = df[col].dropna().tolist()
         if len(names) > 100:
             print(f"  [主接口] 沪深北 A 股：{len(names)} 条")
             return names
-        print(f"  [主接口] 返回数据过少（{len(names)}条），尝试备用接口...")
+        print(f"  [主接口] 数据过少（{len(names)}条），尝试备用...")
     except Exception as e:
-        print(f"  [主接口] 失败：{e}，尝试备用接口...")
+        print(f"  [主接口] 失败：{e}，尝试备用...")
 
     time.sleep(2)
 
-    # 备用接口：新浪实时行情（含沪深京全部 A 股）
+    # 备用接口：新浪实时行情
     try:
         df = ak.stock_zh_a_spot()
         col = "名称" if "名称" in df.columns else df.columns[1]
@@ -91,21 +96,59 @@ def fetch_cn_stocks() -> list[str]:
         return []
 
 
-def fetch_tw_stocks() -> list[str]:
-    """台湾股票：东方财富台股实时行情"""
-    print("正在获取台湾股票...")
+def fetch_twse_listed() -> list[str]:
+    """台湾证交所上市股票（TWSE 官方 API）"""
+    url = "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
     try:
-        df = ak.stock_tw_spot_em()
-        # 列名通常为 '名称' 或第2列
-        col = "名称" if "名称" in df.columns else df.columns[1]
-        names = df[col].dropna().tolist()
-        # 过滤纯英文条目
-        names = [n for n in names if any('\u4e00' <= c <= '\u9fff' for c in str(n))]
-        print(f"  台湾股票（含中文名）：{len(names)} 条")
+        resp = requests.get(url, headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+        data = resp.json()
+        names = [item.get("Name", "").strip() for item in data if item.get("Name")]
+        names = [n for n in names if any('\u4e00' <= c <= '\u9fff' for c in n)]
+        print(f"  台湾证交所上市：{len(names)} 条")
         return names
     except Exception as e:
-        print(f"  [警告] 台湾股票获取失败：{e}")
+        print(f"  [警告] 台湾证交所上市获取失败：{e}")
+
+    # 备用：证交所公司基本资料 API
+    try:
+        url2 = "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
+        resp = requests.get(url2, headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+        data = resp.json()
+        names = [item.get("公司简称", item.get("公司名称", "")).strip() for item in data]
+        names = [n for n in names if n and any('\u4e00' <= c <= '\u9fff' for c in n)]
+        print(f"  台湾证交所上市（备用）：{len(names)} 条")
+        return names
+    except Exception as e:
+        print(f"  [警告] 台湾证交所备用接口失败：{e}")
         return []
+
+
+def fetch_tpex_otc() -> list[str]:
+    """台湾柜买中心上柜股票（TPEx 官方 API）"""
+    url = "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_quotes"
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+        data = resp.json()
+        names = [item.get("CompanyName", "").strip() for item in data if item.get("CompanyName")]
+        names = [n for n in names if any('\u4e00' <= c <= '\u9fff' for c in n)]
+        print(f"  台湾柜买中心上柜：{len(names)} 条")
+        return names
+    except Exception as e:
+        print(f"  [警告] 台湾柜买中心获取失败：{e}")
+        return []
+
+
+def fetch_tw_stocks() -> list[str]:
+    """台湾股票：上市 + 上柜"""
+    print("正在获取台湾股票...")
+    names = []
+    names.extend(fetch_twse_listed())
+    time.sleep(1)
+    names.extend(fetch_tpex_otc())
+    return names
 
 
 def generate_dict(names: list[str]) -> None:
