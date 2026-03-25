@@ -1,0 +1,19 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# 股票名称词库（沪深A股 + 台湾 + 美股）
+# 数据来源：东方财富 / akshare
+# 更新时间：2026-03-25
+# 股票数量：0
+#
+# 使用方法：在 rime-ice 的 cn_dicts/ 目录下放置此文件
+# 并在 rime_ice.dict.yaml 的 import_tables 中添加：
+#   - cn_dicts/stock
+#
+---
+name: stock
+version: "2026-03-25"
+sort: by_weight
+...
+
+
