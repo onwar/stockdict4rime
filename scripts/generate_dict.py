@@ -16,10 +16,35 @@ import datetime
 import requests
 import akshare as ak
 import opencc
+import pypinyin
 from pypinyin import lazy_pinyin, Style
 
 # 繁体 → 简体转换器
 CC = opencc.OpenCC("t2s")
+
+# 手动补充股票名称中常见多音字的正确读音，pypinyin 会优先使用
+CUSTOM_PHRASES = {
+    "长和": "chang he",
+    "长实": "chang shi",
+    "长江": "chang jiang",
+    "长城": "chang cheng",
+    "长安": "chang an",
+    "长电": "chang dian",
+    "长虹": "chang hong",
+    "长航": "chang hang",
+    "长春": "chang chun",
+    "长沙": "chang sha",
+    "银行": "yin hang",
+    "中行": "zhong hang",
+    "农行": "nong hang",
+    "工行": "gong hang",
+    "招行": "zhao hang",
+    "重庆": "chong qing",
+    "重工": "zhong gong",
+}
+
+for phrase, pinyin_str in CUSTOM_PHRASES.items():
+    pypinyin.load_phrases_dict({phrase: [[p] for p in pinyin_str.split()]})
 
 OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..", "dict", "stock.dict.yaml")
 
@@ -54,8 +79,8 @@ sort: by_weight
 
 
 def get_pinyin(name: str) -> str:
-    """将名称转换为拼音，以空格分隔"""
-    return " ".join(lazy_pinyin(name, style=Style.NORMAL))
+    """将名称转换为拼音，以空格分隔（启用智能模式提高多音字准确率）"""
+    return " ".join(lazy_pinyin(name, style=Style.NORMAL, errors="ignore"))
 
 
 def to_simplified(names: list[str]) -> list[str]:
