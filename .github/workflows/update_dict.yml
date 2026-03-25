@@ -1,4 +1,4 @@
-name: Update Stock RIME Dict
+name: Update Stock Dict for RIME
 
 on:
   schedule:
