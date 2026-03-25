@@ -28,6 +28,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dict/a_stock.dict.yaml
+          git add dict/stock.dict.yaml
           git diff --cached --quiet || git commit -m "chore: update A-stock dict $(date +'%Y-%m-%d')"
           git push
