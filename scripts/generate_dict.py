@@ -14,7 +14,11 @@ import time
 import datetime
 import requests
 import akshare as ak
+import opencc
 from pypinyin import lazy_pinyin, Style
+
+# 繁体 → 简体转换器
+CC = opencc.OpenCC("t2s")
 
 OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..", "dict", "stock.dict.yaml")
 
@@ -96,6 +100,11 @@ def fetch_cn_stocks() -> list[str]:
         return []
 
 
+def to_simplified(names: list[str]) -> list[str]:
+    """繁体中文转简体"""
+    return [CC.convert(n) for n in names]
+
+
 def fetch_twse_listed() -> list[str]:
     """台湾证交所上市股票（TWSE 官方 API）"""
     url = "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
@@ -105,6 +114,7 @@ def fetch_twse_listed() -> list[str]:
         data = resp.json()
         names = [item.get("Name", "").strip() for item in data if item.get("Name")]
         names = [n for n in names if any('\u4e00' <= c <= '\u9fff' for c in n)]
+        names = to_simplified(names)
         print(f"  台湾证交所上市：{len(names)} 条")
         return names
     except Exception as e:
@@ -118,6 +128,7 @@ def fetch_twse_listed() -> list[str]:
         data = resp.json()
         names = [item.get("公司简称", item.get("公司名称", "")).strip() for item in data]
         names = [n for n in names if n and any('\u4e00' <= c <= '\u9fff' for c in n)]
+        names = to_simplified(names)
         print(f"  台湾证交所上市（备用）：{len(names)} 条")
         return names
     except Exception as e:
@@ -134,6 +145,7 @@ def fetch_tpex_otc() -> list[str]:
         data = resp.json()
         names = [item.get("CompanyName", "").strip() for item in data if item.get("CompanyName")]
         names = [n for n in names if any('\u4e00' <= c <= '\u9fff' for c in n)]
+        names = to_simplified(names)
         print(f"  台湾柜买中心上柜：{len(names)} 条")
         return names
     except Exception as e:
