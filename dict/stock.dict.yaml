@@ -3,8 +3,8 @@
 #
 # 股票名称词库（沪深北A股 + 港股 + 台湾上市/上柜）
 # 数据来源：新浪财经 / 港交所 / 台湾证交所 / 柜买中心
-# 更新时间：2026-03-25
-# 股票数量：8884
+# 更新时间：2026-03-30
+# 股票数量：8896
 #
 # 使用方法：在 rime-ice 的 cn_dicts/ 目录下放置此文件
 # 并在 rime_ice.dict.yaml 的 import_tables 中添加：
@@ -12,7 +12,7 @@
 #
 ---
 name: stock
-version: "2026-03-25"
+version: "2026-03-30"
 sort: by_weight
 ...
 
@@ -54,7 +54,6 @@ sort: by_weight
 *ST天择	tian ze	1
 *ST天龙	tian long	1
 *ST太和	tai he	1
-*ST奥维	ao wei	1
 *ST威尔	wei er	1
 *ST宇顺	yu shun	1
 *ST宝实	bao shi	1
@@ -70,7 +69,6 @@ sort: by_weight
 *ST星光	xing guang	1
 *ST星农	xing nong	1
 *ST春天	chun tian	1
-*ST景峰	jing feng	1
 *ST智胜	zhi sheng	1
 *ST松发	song fa	1
 *ST椰岛	ye dao	1
@@ -109,14 +107,15 @@ sort: by_weight
 *ST阳光	yang guang	1
 *ST集友	ji you	1
 *ST高斯	gao si	1
+C宏明	hong ming	1
+C视涯	shi ya	1
 FT台湾Smart	tai wan	1
 FT台湾永续高息	tai wan yong xu gao xi	1
 FT投资级债20+	tou zi ji zhai	1
 FT洁净能源	jie jing neng yuan	1
 FT金融债10+	jin rong zhai	1
 GQY视讯	shi xun	1
-N宏明	hong ming	1
-N视涯	shi ya	1
+N悦龙	yue long	1
 ST东尼	dong ni	1
 ST东时	dong shi	1
 ST中珠	zhong zhu	1
@@ -143,7 +142,6 @@ ST嘉澳	jia ao	1
 ST围海	wei hai	1
 ST复华	fu hua	1
 ST天圣	tian sheng	1
-ST天瑞	tian rui	1
 ST太重	tai zhong	1
 ST宁科	ning ke	1
 ST宏达	hong da	1
@@ -164,6 +162,7 @@ ST明诚	ming cheng	1
 ST易联众	yi lian zhong	1
 ST易购	yi gou	1
 ST晨鸣	chen ming	1
+ST景峰	jing feng	1
 ST景谷	jing gu	1
 ST智云	zhi yun	1
 ST智知	zhi zhi	1
@@ -466,6 +465,7 @@ TCL科技	ke ji	1
 世纪恒通	shi ji heng tong	1
 世纪瑞尔	shi ji rui er	1
 世纪钢	shi ji gang	1
+世纪风电	shi ji feng dian	1
 世纪鼎利	shi ji ding li	1
 世联行	shi lian xing	1
 世芯-KY	shi xin	1
@@ -1072,6 +1072,7 @@ TCL科技	ke ji	1
 主动中信台湾卓越	zhu dong zhong xin tai wan zhuo yue	1
 主动中信非投等债	zhu dong zhong xin fei tou deng zhai	1
 主动元大AI新经济	zhu dong yuan da xin jing ji	1
+主动兆丰台湾丰收	zhu dong zhao feng tai wan feng shou	1
 主动台新优势成长	zhu dong tai xin you shi cheng zhang	1
 主动台新龙头成长	zhu dong tai xin long tou cheng zhang	1
 主动复华未来50	zhu dong fu hua wei lai	1
@@ -1604,7 +1605,6 @@ TCL科技	ke ji	1
 元大加权N	yuan da jia quan	1
 元大台湾50	yuan da tai wan	1
 元大台湾50反1	yuan da tai wan fan	1
-元大台湾50正2	yuan da tai wan zheng	1
 元大台湾ESG永续	yuan da tai wan yong xu	1
 元大台湾价值高息	yuan da tai wan jia zhi gao xi	1
 元大台湾高息低波	yuan da tai wan gao xi di bo	1
@@ -2463,6 +2463,7 @@ TCL科技	ke ji	1
 南方东西精选	nan fang dong xi jing xuan	1
 南方中证５Ｇ	nan fang zhong zheng	1
 南方亚太房托	nan fang ya tai fang tuo	1
+南方亚洲科技	nan fang ya zhou ke ji	1
 南方传媒	nan fang chuan mei	1
 南方太阳能	nan fang tai yang neng	1
 南方恒指ＥＴＦ	nan fang heng zhi	1
@@ -2474,6 +2475,7 @@ TCL科技	ke ji	1
 南方沙特－Ｒ	nan fang sha te	1
 南方沪深三百	nan fang hu shen san bai	1
 南方泵业	nan fang beng ye	1
+南方港日现金流	nan fang gang ri xian jin liu	1
 南方港美科技	nan fang gang mei ke ji	1
 南方港股通	nan fang gang gu tong	1
 南方港股通红利	nan fang gang gu tong hong li	1
@@ -3423,6 +3425,7 @@ TCL科技	ke ji	1
 天承科技	tian cheng ke ji	1
 天振股份	tian zhen gu fen	1
 天擎	tian qing	1
+天数智芯	tian shu zhi xin	1
 天新药业	tian xin yao ye	1
 天方能源	tian fang neng yuan	1
 天晟新材	tian cheng xin cai	1
@@ -3449,6 +3452,7 @@ TCL科技	ke ji	1
 天瀚	tian han	1
 天玑科技	tian ji ke ji	1
 天玛智控	tian ma zhi kong	1
+天瑞仪器	tian rui yi qi	1
 天益医疗	tian yi yi liao	1
 天目湖	tian mu hu	1
 天目药业	tian mu yao ye	1
@@ -3791,6 +3795,7 @@ TCL科技	ke ji	1
 宏盛股份	hong sheng gu fen	1
 宏硕系统	hong shuo xi tong	1
 宏碁	hong qi	1
+宏碁游戏-创	hong qi you xi chuang	1
 宏碁资讯	hong qi zi xun	1
 宏致	hong zhi	1
 宏英智能	hong ying zhi neng	1
@@ -5069,6 +5074,7 @@ TCL科技	ke ji	1
 易德龙	yi de long	1
 易思维	yi si wei	1
 易成新能	yi cheng xin neng	1
+易方达亚洲半导体	yi fang da ya zhou ban dao ti	1
 易方达恒指ＥＳＧ	yi fang da heng zhi	1
 易方达数科	yi fang da shu ke	1
 易方达数科－Ｒ	yi fang da shu ke	1
@@ -5183,6 +5189,7 @@ TCL科技	ke ji	1
 普天科技	pu tian ke ji	1
 普安	pu an	1
 普拉达	pu la da	1
+普昂医疗	pu ang yi liao	1
 普洛药业	pu luo yao ye	1
 普源精电	pu yuan jing dian	1
 普瑞眼科	pu rui yan ke	1
@@ -5569,6 +5576,7 @@ TCL科技	ke ji	1
 民爆光电	min bao guang dian	1
 民生健康	min sheng jian kang	1
 民生银行	min sheng yin hang	1
+民盛	min sheng	1
 气派科技	qi pai ke ji	1
 气立	qi li	1
 氯碱化工	lv jian hua gong	1
@@ -5744,6 +5752,7 @@ TCL科技	ke ji	1
 汤臣倍健	tang chen bei jian	1
 汽车之家－Ｓ	qi che zhi jia	1
 汽车街	qi che jie	1
+汽轮科技	qi lun ke ji	1
 沃华医药	wo hua yi yao	1
 沃尔德	wo er de	1
 沃尔核材	wo er he cai	1
@@ -6031,7 +6040,6 @@ TCL科技	ke ji	1
 海程邦达	hai cheng bang da	1
 海立股份	hai li gu fen	1
 海翔药业	hai xiang yao ye	1
-海联讯	hai lian xun	1
 海联金汇	hai lian jin hui	1
 海能实业	hai neng shi ye	1
 海能技术	hai neng ji shu	1
@@ -6292,6 +6300,7 @@ TCL科技	ke ji	1
 狮头股份	shi tou gu fen	1
 猫眼娱乐	mao yan yu le	1
 獐子岛	zhang zi dao	1
+玉山严选非投债	yu shan yan xuan fei tou zhai	1
 玉山金	yu shan jin	1
 玉晶光	yu jing guang	1
 玉禾田	yu he tian	1
@@ -8808,6 +8817,9 @@ TCL科技	ke ji	1
 ＧＸ亚洲美债－Ｕ	ya zhou mei zhai	1
 ＧＸ创新蓝筹十强	chuang xin lan chou shi qiang	1
 ＧＸ印度精选十强	yin du jing xuan shi qiang	1
+ＧＸ国寿港美	guo shou gang mei	1
+ＧＸ国寿港美－Ｒ	guo shou gang mei	1
+ＧＸ国寿港美－Ｕ	guo shou gang mei	1
 ＧＸ大中华	da zhong hua	1
 ＧＸ恒生科技	heng sheng ke ji	1
 ＧＸ恒生股息	heng sheng gu xi	1
