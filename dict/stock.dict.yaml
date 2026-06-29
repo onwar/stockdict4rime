@@ -3,8 +3,8 @@
 #
 # 股票名称词库（沪深北A股 + 港股 + 台湾上市/上柜）
 # 数据来源：新浪财经 / 港交所 / 台湾证交所 / 柜买中心
-# 更新时间：2026-06-22
-# 股票数量：8980
+# 更新时间：2026-06-29
+# 股票数量：8985
 #
 # 使用方法：在 rime-ice 的 cn_dicts/ 目录下放置此文件
 # 并在 rime_ice.dict.yaml 的 import_tables 中添加：
@@ -12,7 +12,7 @@
 #
 ---
 name: stock
-version: "2026-06-22"
+version: "2026-06-29"
 sort: by_weight
 ...
 
@@ -22,7 +22,6 @@ sort: by_weight
 *ST东晶	dong jing	1
 *ST东智	dong zhi	1
 *ST东珠	dong zhu	1
-*ST中基	zhong ji	1
 *ST中岩	zhong yan	1
 *ST中设	zhong she	1
 *ST中迪	zhong di	1
@@ -52,7 +51,6 @@ sort: by_weight
 *ST和科	he ke	1
 *ST四通	si tong	1
 *ST国中	guo zhong	1
-*ST国华	guo hua	1
 *ST大晟	da cheng	1
 *ST大立	da li	1
 *ST天喻	tian yu	1
@@ -60,7 +58,6 @@ sort: by_weight
 *ST天箭	tian jian	1
 *ST威领	wei ling	1
 *ST宁视	ning shi	1
-*ST宇顺	yu shun	1
 *ST宝实	bao shi	1
 *ST宝馨	bao xin	1
 *ST实达	shi da	1
@@ -73,17 +70,14 @@ sort: by_weight
 *ST康佳A	kang jia	1
 *ST建艺	jian yi	1
 *ST开元	kai yuan	1
-*ST恒久	heng jiu	1
 *ST摩登	mo deng	1
 *ST数源	shu yuan	1
 *ST新元	xin yuan	1
-*ST新潮	xin chao	1
 *ST明德	ming de	1
 *ST易录	yi lu	1
 *ST春兴	chun xing	1
 *ST春天	chun tian	1
 *ST景谷	jing gu	1
-*ST智胜	zhi sheng	1
 *ST未名	wei ming	1
 *ST柳化	liu hua	1
 *ST棒杰	bang jie	1
@@ -119,7 +113,6 @@ sort: by_weight
 *ST西发	xi fa	1
 *ST西旅	xi lv	1
 *ST赛为	sai wei	1
-*ST赛隆	sai long	1
 *ST起步	qi bu	1
 *ST金灵	jin ling	1
 *ST金科	jin ke	1
@@ -130,14 +123,18 @@ sort: by_weight
 *ST顾地	gu di	1
 *ST香雪	xiang xue	1
 *ST高科	gao ke	1
-DR建邦科	jian bang ke	1
-DR海程邦	hai cheng bang	1
-DR翔港科	xiang gang ke	1
+C惠科	hui ke	1
+C臻宝	zhen bao	1
+DR云里物	yun li wu	1
+DR华设集	hua she ji	1
+DR柏楚电	bai chu dian	1
+DR泰鹏智	tai peng zhi	1
 FT台湾Smart	tai wan	1
 FT台湾永续高息	tai wan yong xu gao xi	1
 FT投资级债20+	tou zi ji zhai	1
 FT洁净能源	jie jing neng yuan	1
 FT金融债10+	jin rong zhai	1
+N科莱	ke lai	1
 ST万邦	wan bang	1
 ST三木	san mu	1
 ST东尼	dong ni	1
@@ -167,6 +164,7 @@ ST华铭	hua ming	1
 ST南新	nan xin	1
 ST南都	nan dou	1
 ST司特	si te	1
+ST合力泰	he li tai	1
 ST合纵	he zong	1
 ST同德	tong de	1
 ST喜临门	xi lin men	1
@@ -249,31 +247,36 @@ S佳通	jia tong	1
 TCL中环	zhong huan	1
 TCL智家	zhi jia	1
 TCL科技	ke ji	1
-XD亚星锚	ya xing mao	1
-XD今创集	jin chuang ji	1
-XD众源新	zhong yuan xin	1
-XD会通股	hui tong gu	1
-XD兴发集	xing fa ji	1
-XD北元化	bei yuan hua	1
-XD华润江	hua run jiang	1
-XD南微医	nan wei yi	1
-XD圣湘生	sheng xiang sheng	1
-XD大胜达	da sheng da	1
-XD宁波精	ning bo jing	1
-XD宏力达	hong li da	1
-XD富春染	fu chun ran	1
-XD强一股	qiang yi gu	1
-XD恒誉环	heng yu huan	1
-XD李子园	li zi yuan	1
-XD泰晶科	tai jing ke	1
-XD海航科	hai hang ke	1
-XD灿瑞科	can rui ke	1
-XD爱博医	ai bo yi	1
-XD祥和实	xiang he shi	1
-XD美思德	mei si de	1
-XD茂莱光	mao lai guang	1
-XD赛特新	sai te xin	1
-XD迈信林	mai xin lin	1
+XD中国外	zhong guo wai	1
+XD亨通光	heng tong guang	1
+XD共进股	gong jin gu	1
+XD则成电	ze cheng dian	1
+XD创新新	chuang xin xin	1
+XD华电科	hua dian ke	1
+XD华能水	hua neng shui	1
+XD卫信康	wei xin kang	1
+XD合肥高	he fei gao	1
+XD国检集	guo jian ji	1
+XD国网英	guo wang ying	1
+XD坤博精	kun bo jing	1
+XD奥来德	ao lai de	1
+XD宁波韵	ning bo yun	1
+XD时代出	shi dai chu	1
+XD易实精	yi shi jing	1
+XD杭钢股	hang gang gu	1
+XD梓橦宫	zi tong gong	1
+XD永安期	yong an qi	1
+XD沪农商	hu nong shang	1
+XD浪莎股	lang sha gu	1
+XD纽威股	niu wei gu	1
+XD腾达建	teng da jian	1
+XD艾隆科	ai long ke	1
+XD苏垦农	su ken nong	1
+XD金发科	jin fa ke	1
+XD键凯科	jian kai ke	1
+XD阳光诺	yang guang nuo	1
+XD鼎胜新	ding sheng xin	1
+XD齐鲁华	qi lu hua	1
 一博科技	yi bo ke ji	1
 一品红	yi pin hong	1
 一彬科技	yi bin ke ji	1
@@ -877,6 +880,7 @@ XD迈信林	mai xin lin	1
 中国黄金国际	zhong guo huang jin guo ji	1
 中国龙工	zhong guo long gong	1
 中坚科技	zhong jian ke ji	1
+中基健康	zhong ji jian kang	1
 中复神鹰	zhong fu shen ying	1
 中大力德	zhong da li de	1
 中天	zhong tian	1
@@ -1139,6 +1143,7 @@ XD迈信林	mai xin lin	1
 主动中信非投等债	zhu dong zhong xin fei tou deng zhai	1
 主动元大AI新经济	zhu dong yuan da xin jing ji	1
 主动兆丰台湾丰收	zhu dong zhao feng tai wan feng shou	1
+主动凯基台湾	zhu dong kai ji tai wan	1
 主动台新优势成长	zhu dong tai xin you shi cheng zhang	1
 主动台新龙头成长	zhu dong tai xin long tou cheng zhang	1
 主动国泰动能高息	zhu dong guo tai dong neng gao xi	1
@@ -1278,7 +1283,6 @@ XD迈信林	mai xin lin	1
 云路股份	yun lu gu fen	1
 云辰	yun chen	1
 云迹	yun ji	1
-云里物里	yun li wu li	1
 云铝股份	yun lv gu fen	1
 云锋金融	yun feng jin rong	1
 云顶新耀	yun ding xin yao	1
@@ -1328,6 +1332,7 @@ XD迈信林	mai xin lin	1
 亚德客-KY	ya de ke	1
 亚昕	ya xin	1
 亚星化学	ya xing hua xue	1
+亚星锚链	ya xing mao lian	1
 亚普股份	ya pu gu fen	1
 亚泥	ya ni	1
 亚泰	ya tai	1
@@ -1365,7 +1370,6 @@ XD迈信林	mai xin lin	1
 交运股份	jiao yun gu fen	1
 交通银行	jiao tong yin hang	1
 亨迪药业	heng di yao ye	1
-亨通光电	heng tong guang dian	1
 亨通股份	heng tong gu fen	1
 享温馨	xiang wen xin	1
 京东健康	jing dong jian kang	1
@@ -1424,6 +1428,7 @@ XD迈信林	mai xin lin	1
 仁度生物	ren du sheng wu	1
 仁智股份	ren zhi gu fen	1
 今世缘	jin shi yuan	1
+今创集团	jin chuang ji tuan	1
 今国光	jin guo guang	1
 今天国际	jin tian guo ji	1
 今展科	jin zhan ke	1
@@ -1459,6 +1464,7 @@ XD迈信林	mai xin lin	1
 众智科技	zhong zhi ke ji	1
 众望布艺	zhong wang bu yi	1
 众泰汽车	zhong tai qi che	1
+众源新材	zhong yuan xin cai	1
 众生药业	zhong sheng yao ye	1
 众福科	zhong fu ke	1
 众诚科技	zhong cheng ke ji	1
@@ -1481,6 +1487,7 @@ XD迈信林	mai xin lin	1
 优迅股份	you xun gu fen	1
 会畅科技	hui chang ke ji	1
 会稽山	hui ji shan	1
+会通股份	hui tong gu fen	1
 伟仕佳杰	wei shi jia jie	1
 伟全	wei quan	1
 伟创电气	wei chuang dian qi	1
@@ -1862,7 +1869,6 @@ XD迈信林	mai xin lin	1
 共创草坪	gong chuang cao ping	1
 共同药业	gong tong yao ye	1
 共达电声	gong da dian sheng	1
-共进股份	gong jin gu fen	1
 关中	guan zhong	1
 关贸	guan mao	1
 兴业科技	xing ye ke ji	1
@@ -1872,6 +1878,7 @@ XD迈信林	mai xin lin	1
 兴业银锡	xing ye yin xi	1
 兴农	xing nong	1
 兴勤	xing qin	1
+兴发集团	xing fa ji tuan	1
 兴图新科	xing tu xin ke	1
 兴富发	xing fu fa	1
 兴森科技	xing sen ke ji	1
@@ -2004,7 +2011,6 @@ XD迈信林	mai xin lin	1
 凯龙高科	kai long gao ke	1
 出版传媒	chu ban chuan mei	1
 分众传媒	fen zhong chuan mei	1
-则成电子	ze cheng dian zi	1
 创世纪	chuang shi ji	1
 创业家	chuang ye jia	1
 创业慧康	chuang ye hui kang	1
@@ -2019,7 +2025,6 @@ XD迈信林	mai xin lin	1
 创控	chuang kong	1
 创新医疗	chuang xin yi liao	1
 创新实业	chuang xin shi ye	1
-创新新材	chuang xin xin cai	1
 创新服务	chuang xin fu wu	1
 创泓科技	chuang hong ke ji	1
 创源股份	chuang yuan gu fen	1
@@ -2126,6 +2131,7 @@ XD迈信林	mai xin lin	1
 北京科锐	bei jing ke rui	1
 北京银行	bei jing yin hang	1
 北京首都机场股份	bei jing shou du ji chang gu fen	1
+北元化工	bei yuan hua gong	1
 北化股份	bei hua gu fen	1
 北基	bei ji	1
 北大医药	bei da yi yao	1
@@ -2374,6 +2380,7 @@ XD迈信林	mai xin lin	1
 华润建材科技	hua run jian cai ke ji	1
 华润微	hua run wei	1
 华润材料	hua run cai liao	1
+华润江中	hua run jiang zhong	1
 华润燃气	hua run ran qi	1
 华润电力	hua run dian li	1
 华润置地	hua run zhi di	1
@@ -2390,7 +2397,6 @@ XD迈信林	mai xin lin	1
 华电国际	hua dian guo ji	1
 华电国际电力股份	hua dian guo ji dian li gu fen	1
 华电新能	hua dian xin neng	1
-华电科工	hua dian ke gong	1
 华电网	hua dian wang	1
 华电能源	hua dian neng yuan	1
 华电辽能	hua dian liao neng	1
@@ -2423,7 +2429,6 @@ XD迈信林	mai xin lin	1
 华胜天成	hua sheng tian cheng	1
 华能国际	hua neng guo ji	1
 华能国际电力股份	hua neng guo ji dian li gu fen	1
-华能水电	hua neng shui dian	1
 华能蒙电	hua neng meng dian	1
 华脉科技	hua mai ke ji	1
 华自科技	hua zi ke ji	1
@@ -2441,7 +2446,6 @@ XD迈信林	mai xin lin	1
 华融化学	hua rong hua xue	1
 华西股份	hua xi gu fen	1
 华西证券	hua xi zheng quan	1
-华设集团	hua she ji tuan	1
 华谊集团	hua yi ji tuan	1
 华豫宁	hua yu ning	1
 华贸物流	hua mao wu liu	1
@@ -2482,7 +2486,6 @@ XD迈信林	mai xin lin	1
 协易机	xie yi ji	1
 协益	xie yi	1
 协禧	xie xi	1
-协鑫新能源	xie xin xin neng yuan	1
 协鑫科技	xie xin ke ji	1
 协鑫能科	xie xin neng ke	1
 协鑫集成	xie xin ji cheng	1
@@ -2537,6 +2540,7 @@ XD迈信林	mai xin lin	1
 南山铝业	nan shan lv ye	1
 南山铝业国际	nan shan lv ye guo ji	1
 南帝	nan di	1
+南微医学	nan wei yi xue	1
 南方东英越南３０	nan fang dong ying yue nan	1
 南方东西精选	nan fang dong xi jing xuan	1
 南方中证５Ｇ	nan fang zhong zheng	1
@@ -2661,7 +2665,6 @@ XD迈信林	mai xin lin	1
 卧安机器人	wo an ji qi ren	1
 卧龙新能	wo long xin neng	1
 卧龙电驱	wo long dian qu	1
-卫信康	wei xin kang	1
 卫光生物	wei guang sheng wu	1
 卫司特	wei si te	1
 卫宁健康	wei ning jian kang	1
@@ -2831,7 +2834,6 @@ XD迈信林	mai xin lin	1
 合众思壮	he zhong si zhuang	1
 合兴包装	he xing bao zhuang	1
 合兴股份	he xing gu fen	1
-合力泰	he li tai	1
 合力科技	he li ke ji	1
 合勤控	he qin kong	1
 合合信息	he he xin xi	1
@@ -2845,7 +2847,6 @@ XD迈信林	mai xin lin	1
 合百集团	he bai ji tuan	1
 合盛硅业	he sheng gui ye	1
 合肥城建	he fei cheng jian	1
-合肥高科	he fei gao ke	1
 合邦	he bang	1
 合金投资	he jin tou zi	1
 合锻智能	he duan zhi neng	1
@@ -2955,6 +2956,7 @@ XD迈信林	mai xin lin	1
 和记电讯香港	he ji dian xun xiang gang	1
 和辉光电	he hui guang dian	1
 和达科技	he da ke ji	1
+和迅	he xun	1
 和远气体	he yuan qi ti	1
 和邦生物	he bang sheng wu	1
 和铂医药－Ｂ	he bo yi yao	1
@@ -3088,6 +3090,7 @@ XD迈信林	mai xin lin	1
 国创高新	guo chuang gao xin	1
 国力电子	guo li dian zi	1
 国化	guo hua	1
+国华退	guo hua tui	1
 国博电子	guo bo dian zi	1
 国发股份	guo fa gu fen	1
 国城矿业	guo cheng kuang ye	1
@@ -3116,7 +3119,6 @@ XD迈信林	mai xin lin	1
 国机通用	guo ji tong yong	1
 国机重装	guo ji zhong zhuang	1
 国林科技	guo lin ke ji	1
-国检集团	guo jian ji tuan	1
 国民技术	guo min ji shu	1
 国泰10Y+金融债	guo tai jin rong zhai	1
 国泰20年美债	guo tai nian mei zhai	1
@@ -3192,7 +3194,6 @@ XD迈信林	mai xin lin	1
 国统股份	guo tong gu fen	1
 国缆检测	guo lan jian ce	1
 国网信通	guo wang xin tong	1
-国网英大	guo wang ying da	1
 国联民生	guo lian min sheng	1
 国联水产	guo lian shui chan	1
 国联股份	guo lian gu fen	1
@@ -3235,6 +3236,7 @@ XD迈信林	mai xin lin	1
 圣晖*	sheng hui	1
 圣晖集成	sheng hui ji cheng	1
 圣泉集团	sheng quan ji tuan	1
+圣湘生物	sheng xiang sheng wu	1
 圣诺生物	sheng nuo sheng wu	1
 圣达生物	sheng da sheng wu	1
 圣邦股份	sheng bang gu fen	1
@@ -3252,7 +3254,6 @@ XD迈信林	mai xin lin	1
 均胜电子	jun sheng dian zi	1
 均豪	jun hao	1
 坚朗五金	jian lang wu jin	1
-坤博精工	kun bo jing gong	1
 坤彩科技	kun cai ke ji	1
 坤恒顺维	kun heng shun wei	1
 坤悦	kun yue	1
@@ -3425,6 +3426,7 @@ XD迈信林	mai xin lin	1
 大统益	da tong yi	1
 大综	da zong	1
 大联大	da lian da	1
+大胜达	da sheng da	1
 大西洋	da xi yang	1
 大豪科技	da hao ke ji	1
 大车队	da che dui	1
@@ -3631,7 +3633,6 @@ XD迈信林	mai xin lin	1
 奥普光电	ao pu guang dian	1
 奥普特	ao pu te	1
 奥普科技	ao pu ke ji	1
-奥来德	ao lai de	1
 奥比中光	ao bi zhong guang	1
 奥泰生物	ao tai sheng wu	1
 奥浦迈	ao pu mai	1
@@ -3718,12 +3719,12 @@ XD迈信林	mai xin lin	1
 宁波方正	ning bo fang zheng	1
 宁波海运	ning bo hai yun	1
 宁波港	ning bo gang	1
+宁波精达	ning bo jing da	1
 宁波联合	ning bo lian he	1
 宁波能源	ning bo neng yuan	1
 宁波色母	ning bo se mu	1
 宁波远洋	ning bo yuan yang	1
 宁波银行	ning bo yin hang	1
-宁波韵升	ning bo yun sheng	1
 宁波高发	ning bo gao fa	1
 宅配通	zhai pei tong	1
 宇信科技	yu xin ke ji	1
@@ -3740,6 +3741,7 @@ XD迈信林	mai xin lin	1
 宇通重工	yu tong zhong gong	1
 宇邦新材	yu bang xin cai	1
 宇隆	yu long	1
+宇顺电子	yu shun dian zi	1
 安 纳 达	an na da	1
 安东油田服务	an dong you tian fu wu	1
 安乃达	an nai da	1
@@ -3840,6 +3842,7 @@ XD迈信林	mai xin lin	1
 宏信建发	hong xin jian fa	1
 宏全	hong quan	1
 宏利金融－Ｓ	hong li jin rong	1
+宏力达	hong li da	1
 宏华数科	hong hua shu ke	1
 宏发股份	hong fa gu fen	1
 宏和	hong he	1
@@ -3979,6 +3982,7 @@ XD迈信林	mai xin lin	1
 富强鑫	fu qiang xin	1
 富恒新材	fu heng xin cai	1
 富旺	fu wang	1
+富春染织	fu chun ran zhi	1
 富春环保	fu chun huan bao	1
 富春股份	fu chun gu fen	1
 富晶通	fu jing tong	1
@@ -4157,6 +4161,7 @@ XD迈信林	mai xin lin	1
 巍华新材	wei hua xin cai	1
 川仪股份	chuan yi gu fen	1
 川发龙蟒	chuan fa long mang	1
+川大智胜	chuan da zhi sheng	1
 川宁生物	chuan ning sheng wu	1
 川宝	chuan bao	1
 川恒股份	chuan heng gu fen	1
@@ -4406,6 +4411,7 @@ XD迈信林	mai xin lin	1
 建设银行	jian she yin hang	1
 建达	jian da	1
 建通	jian tong	1
+建邦科技	jian bang ke ji	1
 建锠	jian chang	1
 建霖家居	jian lin jia ju	1
 建龙微纳	jian long wei na	1
@@ -4443,6 +4449,7 @@ XD迈信林	mai xin lin	1
 张家界	zhang jia jie	1
 张小泉	zhang xiao quan	1
 张江高科	zhang jiang gao ke	1
+强一股份	qiang yi gu fen	1
 强信-KY	qiang xin	1
 强力新材	qiang li xin cai	1
 强新	qiang xin	1
@@ -4598,6 +4605,7 @@ XD迈信林	mai xin lin	1
 怡达股份	yi da gu fen	1
 恒丰纸业	heng feng zhi ye	1
 恒为科技	heng wei ke ji	1
+恒久退	heng jiu tui	1
 恒光股份	heng guang gu fen	1
 恒兴新材	heng xing xin cai	1
 恒力石化	heng li shi hua	1
@@ -4651,6 +4659,7 @@ XD迈信林	mai xin lin	1
 恒耀	heng yao	1
 恒耀甲特	heng yao jia te	1
 恒而达	heng er da	1
+恒誉环保	heng yu huan bao	1
 恒辉安防	heng hui an fang	1
 恒达新材	heng da xin cai	1
 恒运昌	heng yun chang	1
@@ -4960,6 +4969,7 @@ XD迈信林	mai xin lin	1
 新洋丰	xin yang feng	1
 新海	xin hai	1
 新润	xin run	1
+新潮能源	xin chao neng yuan	1
 新澳股份	xin ao gu fen	1
 新濠国际发展	xin hao guo ji fa zhan	1
 新瀚新材	xin han xin cai	1
@@ -5073,8 +5083,8 @@ XD迈信林	mai xin lin	1
 旭软	xu ruan	1
 旭隼	xu sun	1
 时代万恒	shi dai wan heng	1
-时代出版	shi dai chu ban	1
 时代天使	shi dai tian shi	1
+时代数字	shi dai shu zi	1
 时代新材	shi dai xin cai	1
 时代电气	shi dai dian qi	1
 时创能源	shi chuang neng yuan	1
@@ -5131,12 +5141,12 @@ XD迈信林	mai xin lin	1
 明阳电气	ming yang dian qi	1
 明阳电路	ming yang dian lu	1
 明阳科技	ming yang ke ji	1
+易 方 达 港 交 所 科 技	yi fang da gang jiao suo ke ji	1
 易事特	yi shi te	1
 易华电	yi hua dian	1
 易发	yi fa	1
 易天股份	yi tian gu fen	1
 易威	yi wei	1
-易实精密	yi shi jing mi	1
 易德龙	yi de long	1
 易思维	yi si wei	1
 易成新能	yi cheng xin neng	1
@@ -5159,6 +5169,8 @@ XD迈信林	mai xin lin	1
 易方达ＡＩ	yi fang da	1
 易方达ＡＩ－Ｒ	yi fang da	1
 易方达ＡＩ－Ｕ	yi fang da	1
+易方达ＭＰＦ港股	yi fang da gang gu	1
+易方达ＭＰＦＡ股	yi fang da gu	1
 易明医药	yi ming yi yao	1
 易普力	yi pu li	1
 易点天下	yi dian tian xia	1
@@ -5400,6 +5412,7 @@ XD迈信林	mai xin lin	1
 机器人	ji qi ren	1
 机科股份	ji ke gu fen	1
 杉杉股份	shan shan gu fen	1
+李子园	li zi yuan	1
 李宁	li ning	1
 李宁－Ｒ	li ning	1
 李洲	li zhou	1
@@ -5426,7 +5439,6 @@ XD迈信林	mai xin lin	1
 杭特	hang te	1
 杭电股份	hang dian gu fen	1
 杭萧钢构	hang xiao gang gou	1
-杭钢股份	hang gang gu fen	1
 杭齿前进	hang chi qian jin	1
 杰克科技	jie ke ke ji	1
 杰创智能	jie chuang zhi neng	1
@@ -5464,7 +5476,6 @@ XD迈信林	mai xin lin	1
 柏承	bai cheng	1
 柏文	bai wen	1
 柏星龙	bai xing long	1
-柏楚电子	bai chu dian zi	1
 柏腾	bai teng	1
 柏诚股份	bai cheng gu fen	1
 柘中股份	zhe zhong gu fen	1
@@ -5505,14 +5516,12 @@ XD迈信林	mai xin lin	1
 梅花生物	mei hua sheng wu	1
 梅轮电梯	mei lun dian ti	1
 梅雁吉祥	mei yan ji xiang	1
-梓橦宫	zi tong gong	1
 梦天家居	meng tian jia ju	1
 梦洁股份	meng jie gu fen	1
 梦百合	meng bai he	1
 梦网科技	meng wang ke ji	1
 梦金园	meng jin yuan	1
 森宝	sen bao	1
-森崴能源	sen wai neng yuan	1
 森巨	sen ju	1
 森松国际	sen song guo ji	1
 森林包装	sen lin bao zhuang	1
@@ -5688,7 +5697,6 @@ XD迈信林	mai xin lin	1
 永固-KY	yong gu	1
 永大股份	yong da gu fen	1
 永太科技	yong tai ke ji	1
-永安期货	yong an qi huo	1
 永安林业	yong an lin ye	1
 永安药业	yong an yao ye	1
 永安行	yong an xing	1
@@ -5847,7 +5855,6 @@ XD迈信林	mai xin lin	1
 沧州明珠	cang zhou ming zhu	1
 沪上阿姨	hu shang a yi	1
 沪光股份	hu guang gu fen	1
-沪农商行	hu nong shang hang	1
 沪宁股份	hu ning gu fen	1
 沪江材料	hu jiang cai liao	1
 沪电股份	hu dian gu fen	1
@@ -5900,6 +5907,7 @@ XD迈信林	mai xin lin	1
 泰德股份	tai de gu fen	1
 泰恩康	tai en kang	1
 泰慕士	tai mu shi	1
+泰晶科技	tai jing ke ji	1
 泰林生物	tai lin sheng wu	1
 泰格医药	tai ge yi yao	1
 泰永长征	tai yong chang zheng	1
@@ -5923,7 +5931,6 @@ XD迈信林	mai xin lin	1
 泰铭	tai ming	1
 泰霖	tai lin	1
 泰鸿万立	tai hong wan li	1
-泰鹏智能	tai peng zhi neng	1
 泰鼎-KY	tai ding	1
 泷泽科	long ze ke	1
 泸天化	lu tian hua	1
@@ -6025,7 +6032,6 @@ XD迈信林	mai xin lin	1
 浪凡	lang fan	1
 浪潮信息	lang chao xin xi	1
 浪潮软件	lang chao ruan jian	1
-浪莎股份	lang sha gu fen	1
 海 利 得	hai li de	1
 海丰国际	hai feng guo ji	1
 海亮股份	hai liang gu fen	1
@@ -6108,6 +6114,7 @@ XD迈信林	mai xin lin	1
 海目星	hai mu xing	1
 海看股份	hai kan gu fen	1
 海科新源	hai ke xin yuan	1
+海程邦达	hai cheng bang da	1
 海立股份	hai li gu fen	1
 海翔药业	hai xiang yao ye	1
 海联金汇	hai lian jin hui	1
@@ -6115,6 +6122,7 @@ XD迈信林	mai xin lin	1
 海能技术	hai neng ji shu	1
 海能达	hai neng da	1
 海航控股	hai hang kong gu	1
+海航科技	hai hang ke ji	1
 海菲曼	hai fei man	1
 海融科技	hai rong ke ji	1
 海螺创业	hai luo chuang ye	1
@@ -6284,6 +6292,7 @@ XD迈信林	mai xin lin	1
 灿坤	can kun	1
 灿星旅	can xing lv	1
 灿星网	can xing wang	1
+灿瑞科技	can rui ke ji	1
 灿能电力	can neng dian li	1
 灿芯股份	can xin gu fen	1
 炎洲	yan zhou	1
@@ -6321,6 +6330,7 @@ XD迈信林	mai xin lin	1
 爱乐达	ai le da	1
 爱仕达	ai shi da	1
 爱克股份	ai ke gu fen	1
+爱博医疗	ai bo yi liao	1
 爱司凯	ai si kai	1
 爱地雅	ai di ya	1
 爱威科技	ai wei ke ji	1
@@ -6477,7 +6487,6 @@ XD迈信林	mai xin lin	1
 瑞鼎	rui ding	1
 璞泰来	pu tai lai	1
 璞源材料	pu yuan cai liao	1
-璟德	jing de	1
 瓦城	wa cheng	1
 甘化科工	gan hua ke gong	1
 甘咨询	gan zi xun	1
@@ -6749,6 +6758,7 @@ XD迈信林	mai xin lin	1
 神马电力	shen ma dian li	1
 神马股份	shen ma gu fen	1
 神驰机电	shen chi ji dian	1
+祥和实业	xiang he shi ye	1
 祥明智能	xiang ming zhi neng	1
 祥源文旅	xiang yuan wen lv	1
 祥源新材	xiang yuan xin cai	1
@@ -7032,7 +7042,6 @@ XD迈信林	mai xin lin	1
 纵横股份	zong heng gu fen	1
 纵横通信	zong heng tong xin	1
 纽威数控	niu wei shu kong	1
-纽威股份	niu wei gu fen	1
 纽泰格	niu tai ge	1
 线上线下	xian shang xian xia	1
 经纬天地	jing wei tian di	1
@@ -7153,6 +7162,7 @@ XD迈信林	mai xin lin	1
 美德乐	mei de le	1
 美德医疗-DR	mei de yi liao	1
 美心翼申	mei xin yi shen	1
+美思德	mei si de	1
 美新科技	mei xin ke ji	1
 美时	mei shi	1
 美格智能	mei ge zhi neng	1
@@ -7194,6 +7204,7 @@ XD迈信林	mai xin lin	1
 群益A级公司债	qun yi ji gong si zhai	1
 群益ESG投等债0-5	qun yi tou deng zhai	1
 群益ESG投等债20+	qun yi tou deng zhai	1
+群益S&P500	qun yi	1
 群益优选非投等债	qun yi you xuan fei tou deng zhai	1
 群益半导体收益	qun yi ban dao ti shou yi	1
 群益台ESG低碳50	qun yi tai di tan	1
@@ -7209,6 +7220,7 @@ XD迈信林	mai xin lin	1
 群益深证中小	qun yi shen zheng zhong xiao	1
 群益深证中小+R	qun yi shen zheng zhong xiao	1
 群益科技高息成长	qun yi ke ji gao xi cheng zhang	1
+群益美国科技巨头	qun yi mei guo ke ji ju tou	1
 群益证	qun yi zheng	1
 群益道琼美国地产	qun yi dao qiong mei guo di chan	1
 群益那斯达克生技	qun yi na si da ke sheng ji	1
@@ -7218,6 +7230,7 @@ XD迈信林	mai xin lin	1
 翔名	xiang ming	1
 翔宇医疗	xiang yu yi liao	1
 翔楼新材	xiang lou xin cai	1
+翔港科技	xiang gang ke ji	1
 翔耀	xiang yao	1
 翔腾新材	xiang teng xin cai	1
 翔鹭钨业	xiang lu wu ye	1
@@ -7369,7 +7382,6 @@ XD迈信林	mai xin lin	1
 腾讯控股－Ｒ	teng xun kong gu	1
 腾讯音乐－ＳＷ	teng xun yin yue	1
 腾辉电子-KY	teng hui dian zi	1
-腾达建设	teng da jian she	1
 腾达科技	teng da ke ji	1
 腾远钴业	teng yuan gu ye	1
 腾龙股份	teng long gu fen	1
@@ -7447,7 +7459,6 @@ XD迈信林	mai xin lin	1
 艾迪康控股	ai di kang kong gu	1
 艾迪精密	ai di jing mi	1
 艾迪药业	ai di yao ye	1
-艾隆科技	ai long ke ji	1
 节能国祯	jie neng guo zhen	1
 节能环境	jie neng huan jing	1
 节能铁汉	jie neng tie han	1
@@ -7476,7 +7487,6 @@ XD迈信林	mai xin lin	1
 苏农银行	su nong yin hang	1
 苏利股份	su li gu fen	1
 苏博特	su bo te	1
-苏垦农发	su ken nong fa	1
 苏大维格	su da wei ge	1
 苏奥传感	su ao chuan gan	1
 苏宁环球	su ning huan qiu	1
@@ -7535,6 +7545,7 @@ XD迈信林	mai xin lin	1
 茂矽	mao xi	1
 茂硕电源	mao shuo dian yuan	1
 茂纶	mao lun	1
+茂莱光学	mao lai guang xue	1
 茂讯	mao xun	1
 茂达	mao da	1
 茂迪	mao di	1
@@ -7814,6 +7825,7 @@ XD迈信林	mai xin lin	1
 赛托生物	sai tuo sheng wu	1
 赛摩智能	sai mo zhi neng	1
 赛晶科技	sai jing ke ji	1
+赛特新材	sai te xin cai	1
 赛福天	sai fu tian	1
 赛科希德	sai ke xi de	1
 赛维时代	sai wei shi dai	1
@@ -7822,6 +7834,7 @@ XD迈信林	mai xin lin	1
 赛诺医疗	sai nuo yi liao	1
 赛象科技	sai xiang ke ji	1
 赛轮轮胎	sai lun lun tai	1
+赛隆退	sai long tui	1
 赞宇科技	zan yu ke ji	1
 赢合科技	ying he ke ji	1
 赢家时尚	ying jia shi shang	1
@@ -7922,6 +7935,7 @@ XD迈信林	mai xin lin	1
 迅游科技	xun you ke ji	1
 迅策	xun ce	1
 迈为股份	mai wei gu fen	1
+迈信林	mai xin lin	1
 迈克生物	mai ke sheng wu	1
 迈威生物	mai wei sheng wu	1
 迈富时	mai fu shi	1
@@ -7983,12 +7997,8 @@ XD迈信林	mai xin lin	1
 迪贝电气	di bei dian qi	1
 迪阿股份	di a gu fen	1
 退市创兴	tui shi chuang xing	1
-退市华嵘	tui shi hua rong	1
-退市国化	tui shi guo hua	1
 退市太和	tui shi tai he	1
-退市岩石	tui shi yan shi	1
 退市沪科	tui shi hu ke	1
-退市熊猫	tui shi xiong mao	1
 透景生命	tou jing sheng ming	1
 途虎－Ｗ	tu hu	1
 通业科技	tong ye ke ji	1
@@ -8101,7 +8111,6 @@ XD迈信林	mai xin lin	1
 金博股份	jin bo gu fen	1
 金卡智能	jin ka zhi neng	1
 金发拉比	jin fa la bi	1
-金发科技	jin fa ke ji	1
 金固股份	jin gu gu fen	1
 金圆股份	jin yuan gu fen	1
 金地集团	jin di ji tuan	1
@@ -8321,7 +8330,6 @@ XD迈信林	mai xin lin	1
 锦艺集团控股	jin yi ji tuan kong gu	1
 锦鸡股份	jin ji gu fen	1
 锦龙股份	jin long gu fen	1
-键凯科技	jian kai ke ji	1
 键邦股份	jian bang gu fen	1
 锴威特	kai wei te	1
 镇洋发展	zhen yang fa zhan	1
@@ -8413,7 +8421,6 @@ XD迈信林	mai xin lin	1
 阳光照明	yang guang zhao ming	1
 阳光电源	yang guang dian yuan	1
 阳光股份	yang guang gu fen	1
-阳光诺和	yang guang nuo he	1
 阳明	yang ming	1
 阳普医疗	yang pu yi liao	1
 阳程	yang cheng	1
@@ -8744,7 +8751,6 @@ XD迈信林	mai xin lin	1
 鼎炫-KY	ding xuan	1
 鼎熔岩	ding rong yan	1
 鼎翰	ding han	1
-鼎胜新材	ding sheng xin cai	1
 鼎通科技	ding tong ke ji	1
 鼎阳科技	ding yang ke ji	1
 鼎际得	ding ji de	1
@@ -8753,7 +8759,6 @@ XD迈信林	mai xin lin	1
 齐峰新材	qi feng xin cai	1
 齐心集团	qi xin ji tuan	1
 齐翔腾达	qi xiang teng da	1
-齐鲁华信	qi lu hua xin	1
 齐鲁银行	qi lu yin hang	1
 龙佰集团	long bai ji tuan	1
 龙光集团	long guang ji tuan	1
