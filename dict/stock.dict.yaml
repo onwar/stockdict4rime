@@ -3,8 +3,8 @@
 #
 # 股票名称词库（沪深北A股 + 港股 + 台湾上市/上柜）
 # 数据来源：新浪财经 / 港交所 / 台湾证交所 / 柜买中心
-# 更新时间：2026-07-20
-# 股票数量：8990
+# 更新时间：2026-07-27
+# 股票数量：8996
 #
 # 使用方法：在 rime-ice 的 cn_dicts/ 目录下放置此文件
 # 并在 rime_ice.dict.yaml 的 import_tables 中添加：
@@ -12,13 +12,12 @@
 #
 ---
 name: stock
-version: "2026-07-20"
+version: "2026-07-27"
 sort: by_weight
 ...
 
 *ST三六	san liu	1
 *ST三房	san fang	1
-*ST东晶	dong jing	1
 *ST东智	dong zhi	1
 *ST东珠	dong zhu	1
 *ST中岩	zhong yan	1
@@ -117,12 +116,15 @@ sort: by_weight
 *ST顾地	gu di	1
 *ST香雪	xiang xue	1
 *ST高科	gao ke	1
-DR华之杰	hua zhi jie	1
+C泰诺	tai nuo	1
+DR新风光	xin feng guang	1
 FT台湾Smart	tai wan	1
 FT台湾永续高息	tai wan yong xu gao xi	1
 FT投资级债20+	tou zi ji zhai	1
 FT洁净能源	jie jing neng yuan	1
 FT金融债10+	jin rong zhai	1
+N维琪	wei qi	1
+N长鑫	zhang xin	1
 ST万邦	wan bang	1
 ST三木	san mu	1
 ST东尼	dong ni	1
@@ -235,15 +237,8 @@ S佳通	jia tong	1
 TCL中环	zhong huan	1
 TCL智家	zhi jia	1
 TCL科技	ke ji	1
-XD东方证	dong fang zheng	1
-XD中国船	zhong guo chuan	1
-XD中贝通	zhong bei tong	1
-XD信捷电	xin jie dian	1
-XD博众精	bo zhong jing	1
-XD士兰微	shi lan wei	1
-XD有研复	you yan fu	1
-XD联影医	lian ying yi	1
-XD长沙银	chang sha yin	1
+XD复星医	fu xing yi	1
+XD通宝能	tong bao neng	1
 一博科技	yi bo ke ji	1
 一品红	yi pin hong	1
 一彬科技	yi bin ke ji	1
@@ -581,6 +576,7 @@ XD长沙银	chang sha yin	1
 东明-KY	dong ming	1
 东易日盛	dong yi ri sheng	1
 东星医疗	dong xing yi liao	1
+东晶电子	dong jing dian zi	1
 东望时代	dong wang shi dai	1
 东材科技	dong cai ke ji	1
 东来技术	dong lai ji shu	1
@@ -823,6 +819,7 @@ XD长沙银	chang sha yin	1
 中国联通	zhong guo lian tong	1
 中国能建	zhong guo neng jian	1
 中国能源建设	zhong guo neng yuan jian she	1
+中国船舶	zhong guo chuan bo	1
 中国船舶租赁	zhong guo chuan bo zu lin	1
 中国西电	zhong guo xi dian	1
 中国财险	zhong guo cai xian	1
@@ -1030,6 +1027,7 @@ XD长沙银	chang sha yin	1
 中设咨询	zhong she zi xun	1
 中诚咨询	zhong cheng zi xun	1
 中谷物流	zhong gu wu liu	1
+中贝通信	zhong bei tong xin	1
 中赋科技	zhong fu ke ji	1
 中超控股	zhong chao kong gu	1
 中辰股份	zhong chen gu fen	1
@@ -1192,6 +1190,7 @@ XD长沙银	chang sha yin	1
 乔山	qiao shan	1
 乔治白	qiao zhi bai	1
 乔福	qiao fu	1
+乔路铭	qiao lu ming	1
 乔锋智能	qiao feng zhi neng	1
 乔鼎	qiao ding	1
 乖宝宠物	guai bao chong wu	1
@@ -1571,6 +1570,7 @@ XD长沙银	chang sha yin	1
 信实	xin shi	1
 信德新材	xin de xin cai	1
 信息发展	xin xi fa zhan	1
+信捷电气	xin jie dian qi	1
 信昌电	xin chang dian	1
 信测标准	xin ce biao zhun	1
 信濠光电	xin hao guang dian	1
@@ -1606,7 +1606,6 @@ XD长沙银	chang sha yin	1
 健世科技－Ｂ	jian shi ke ji	1
 健之佳	jian zhi jia	1
 健乔	jian qiao	1
-健亚	jian ya	1
 健信	jian xin	1
 健信超导	jian xin chao dao	1
 健友股份	jian you gu fen	1
@@ -2176,6 +2175,7 @@ XD长沙银	chang sha yin	1
 华丰股份	hua feng gu fen	1
 华丽家族	hua li jia zu	1
 华义*	hua yi	1
+华之杰	hua zhi jie	1
 华亚智能	hua ya zhi neng	1
 华人健康	hua ren jian kang	1
 华仁药业	hua ren yao ye	1
@@ -2574,6 +2574,7 @@ XD长沙银	chang sha yin	1
 博世科	bo shi ke	1
 博云新材	bo yun xin cai	1
 博亚精工	bo ya jing gong	1
+博众精工	bo zhong jing gong	1
 博俊科技	bo jun ke ji	1
 博力威	bo li wei	1
 博士旺	bo shi wang	1
@@ -2805,6 +2806,7 @@ XD长沙银	chang sha yin	1
 台通	tai tong	1
 台郡	tai jun	1
 台钢建设	tai gang jian she	1
+台镕科技	tai rong ke ji	1
 台骅控股	tai hua kong gu	1
 台龙	tai long	1
 史丹利	shi dan li	1
@@ -3199,7 +3201,6 @@ XD长沙银	chang sha yin	1
 国邦医药	guo bang yi yao	1
 国金证券	guo jin zheng quan	1
 国银金租	guo yin jin zu	1
-国锐生活	guo rui sheng huo	1
 国际中橡	guo ji zhong xiang	1
 国际医学	guo ji yi xue	1
 国际商业数字技术	guo ji shang ye shu zi ji shu	1
@@ -3268,6 +3269,7 @@ XD长沙银	chang sha yin	1
 塞力医疗	sai li yi liao	1
 增你强	zeng ni qiang	1
 壁仞科技	bi ren ke ji	1
+士兰微	shi lan wei	1
 士开	shi kai	1
 士电	shi dian	1
 士纸	shi zhi	1
@@ -5001,7 +5003,6 @@ XD长沙银	chang sha yin	1
 新集能源	xin ji neng yuan	1
 新零售	xin ling shou	1
 新雷能	xin lei neng	1
-新风光	xin feng guang	1
 新鸿基公司	xin hong ji gong si	1
 新鸿基地产	xin hong ji di chan	1
 新鸿基地产－Ｒ	xin hong ji di chan	1
@@ -5127,7 +5128,6 @@ XD长沙银	chang sha yin	1
 明阳电气	ming yang dian qi	1
 明阳电路	ming yang dian lu	1
 明阳科技	ming yang ke ji	1
-易 方 达 港 交 所 科 技	yi fang da gang jiao suo ke ji	1
 易事特	yi shi te	1
 易华电	yi hua dian	1
 易发	yi fa	1
@@ -5142,6 +5142,7 @@ XD长沙银	chang sha yin	1
 易方达数科	yi fang da shu ke	1
 易方达数科－Ｒ	yi fang da shu ke	1
 易方达数科－Ｕ	yi fang da shu ke	1
+易方达港交所科技	yi fang da gang jiao suo ke ji	1
 易方达生物医药	yi fang da sheng wu yi yao	1
 易方达白酒	yi fang da bai jiu	1
 易方达白酒－Ｒ	yi fang da bai jiu	1
@@ -5206,6 +5207,7 @@ XD长沙银	chang sha yin	1
 春秋航空	chun qiu hang kong	1
 春立医疗	chun li yi liao	1
 春雨	chun yu	1
+春雨医疗	chun yu yi liao	1
 春雪食品	chun xue shi pin	1
 春风动力	chun feng dong li	1
 昭衍新药	zhao yan xin yao	1
@@ -5352,6 +5354,7 @@ XD长沙银	chang sha yin	1
 有成精密	you cheng jing mi	1
 有方科技	you fang ke ji	1
 有益	you yi	1
+有研复材	you yan fu cai	1
 有研新材	you yan xin cai	1
 有研硅	you yan gui	1
 有研粉材	you yan fen cai	1
@@ -5693,6 +5696,7 @@ XD长沙银	chang sha yin	1
 永安行	yong an xing	1
 永崴投控	yong wai tou kong	1
 永彰	yong zhang	1
+永悦健康-创	yong yue jian kang chuang	1
 永悦科技	yong yue ke ji	1
 永捷	yong jie	1
 永擎	yong qing	1
@@ -7269,7 +7273,6 @@ XD长沙银	chang sha yin	1
 联华	lian hua	1
 联华食	lian hua shi	1
 联友金属-创	lian you jin shu chuang	1
-联发	lian fa	1
 联发国际	lian fa guo ji	1
 联发科	lian fa ke	1
 联发股份	lian fa gu fen	1
@@ -7288,6 +7291,7 @@ XD长沙银	chang sha yin	1
 联宝	lian bao	1
 联建光电	lian jian guang dian	1
 联强	lian qiang	1
+联影医疗	lian ying yi liao	1
 联得装备	lian de zhuang bei	1
 联德	lian de	1
 联德控股-KY	lian de kong gu	1
@@ -8010,7 +8014,6 @@ XD长沙银	chang sha yin	1
 通威股份	tong wei gu fen	1
 通宇通讯	tong yu tong xun	1
 通宝光电	tong bao guang dian	1
-通宝能源	tong bao neng yuan	1
 通富微电	tong fu wei dian	1
 通易航天	tong yi hang tian	1
 通泰	tong tai	1
@@ -8373,6 +8376,7 @@ XD长沙银	chang sha yin	1
 长江能科	chang jiang neng ke	1
 长江证券	chang jiang zheng quan	1
 长江通信	chang jiang tong xin	1
+长沙银行	chang sha yin hang	1
 长海股份	zhang hai gu fen	1
 长源东谷	zhang yuan dong gu	1
 长源电力	zhang yuan dian li	1
@@ -8406,6 +8410,7 @@ XD长沙银	chang sha yin	1
 长飞光纤光缆	zhang fei guang xian guang lan	1
 长高电气	zhang gao dian qi	1
 长鸿高科	zhang hong gao ke	1
+长鹰硬科	zhang ying ying ke	1
 长龄液压	zhang ling ye ya	1
 闰土股份	run tu gu fen	1
 闳康	hong kang	1
@@ -8649,6 +8654,7 @@ XD长沙银	chang sha yin	1
 骆驼股份	luo tuo gu fen	1
 骏亚科技	jun ya ke ji	1
 骏创科技	jun chuang ke ji	1
+骏吉-KY	jun ji	1
 骏成科技	jun cheng ke ji	1
 骏鼎达	jun ding da	1
 骑士乳业	qi shi ru ye	1
