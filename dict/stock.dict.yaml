@@ -3,8 +3,8 @@
 #
 # 股票名称词库（沪深北A股 + 港股 + 台湾上市/上柜）
 # 数据来源：新浪财经 / 港交所 / 台湾证交所 / 柜买中心
-# 更新时间：2026-07-27
-# 股票数量：8996
+# 更新时间：2026-08-03
+# 股票数量：8998
 #
 # 使用方法：在 rime-ice 的 cn_dicts/ 目录下放置此文件
 # 并在 rime_ice.dict.yaml 的 import_tables 中添加：
@@ -12,7 +12,7 @@
 #
 ---
 name: stock
-version: "2026-07-27"
+version: "2026-08-03"
 sort: by_weight
 ...
 
@@ -38,7 +38,6 @@ sort: by_weight
 *ST动力	dong li	1
 *ST华幸	hua xing	1
 *ST华西	hua xi	1
-*ST华闻	hua wen	1
 *ST华鹏	hua peng	1
 *ST卓然	zhuo ran	1
 *ST南置	nan zhi	1
@@ -75,7 +74,6 @@ sort: by_weight
 *ST未名	wei ming	1
 *ST柳化	liu hua	1
 *ST棒杰	bang jie	1
-*ST椰岛	ye dao	1
 *ST正平	zheng ping	1
 *ST步森	bu sen	1
 *ST沐邦	mu bang	1
@@ -100,7 +98,6 @@ sort: by_weight
 *ST聆达	ling da	1
 *ST联翔	lian xiang	1
 *ST航图	hang tu	1
-*ST节能	jie neng	1
 *ST英飞	ying fei	1
 *ST莫高	mo gao	1
 *ST萃华	cui hua	1
@@ -116,15 +113,13 @@ sort: by_weight
 *ST顾地	gu di	1
 *ST香雪	xiang xue	1
 *ST高科	gao ke	1
-C泰诺	tai nuo	1
-DR新风光	xin feng guang	1
+C欣兴	xin xing	1
 FT台湾Smart	tai wan	1
 FT台湾永续高息	tai wan yong xu gao xi	1
 FT投资级债20+	tou zi ji zhai	1
 FT洁净能源	jie jing neng yuan	1
 FT金融债10+	jin rong zhai	1
-N维琪	wei qi	1
-N长鑫	zhang xin	1
+N聚仁	ju ren	1
 ST万邦	wan bang	1
 ST三木	san mu	1
 ST东尼	dong ni	1
@@ -138,7 +133,6 @@ ST云网	yun wang	1
 ST亚光	ya guang	1
 ST京机	jing ji	1
 ST京蓝	jing lan	1
-ST人福	ren fu	1
 ST任子行	ren zi xing	1
 ST信安	xin an	1
 ST信源	xin yuan	1
@@ -151,6 +145,7 @@ ST加加	jia jia	1
 ST华扬	hua yang	1
 ST华谊	hua yi	1
 ST华铭	hua ming	1
+ST华闻	hua wen	1
 ST南新	nan xin	1
 ST南都	nan dou	1
 ST司特	si te	1
@@ -159,6 +154,7 @@ ST合纵	he zong	1
 ST同德	tong de	1
 ST喜临门	xi lin men	1
 ST嘉应	jia ying	1
+ST嘉必优	jia bi you	1
 ST嘉澳	jia ao	1
 ST围海	wei hai	1
 ST复华	fu hua	1
@@ -187,6 +183,7 @@ ST智知	zhi zhi	1
 ST朗进	lang jin	1
 ST标准	biao zhun	1
 ST棕榈	zong lv	1
+ST椰岛	ye dao	1
 ST汇洲	hui zhou	1
 ST沈化	shen hua	1
 ST洲际	zhou ji	1
@@ -197,6 +194,7 @@ ST海王	hai wang	1
 ST海钦	hai qin	1
 ST海龙	hai long	1
 ST瀚川	han chuan	1
+ST瑞贝卡	rui bei ka	1
 ST百利	bai li	1
 ST百灵	bai ling	1
 ST福能	fu neng	1
@@ -237,8 +235,11 @@ S佳通	jia tong	1
 TCL中环	zhong huan	1
 TCL智家	zhi jia	1
 TCL科技	ke ji	1
-XD复星医	fu xing yi	1
-XD通宝能	tong bao neng	1
+XDST人福	ren fu	1
+XD中粮糖	zhong liang tang	1
+XD国脉文	guo mai wen	1
+XD工业富	gong ye fu	1
+XD春秋航	chun qiu hang	1
 一博科技	yi bo ke ji	1
 一品红	yi pin hong	1
 一彬科技	yi bin ke ji	1
@@ -982,7 +983,6 @@ XD通宝能	tong bao neng	1
 中粮家佳康	zhong liang jia jia kang	1
 中粮科工	zhong liang ke gong	1
 中粮科技	zhong liang ke ji	1
-中粮糖业	zhong liang tang ye	1
 中粮资本	zhong liang zi ben	1
 中红医疗	zhong hong yi liao	1
 中纤	zhong xian	1
@@ -1152,6 +1152,7 @@ XD通宝能	tong bao neng	1
 丽珠集团	li zhu ji tuan	1
 丽臣实业	li chen shi ye	1
 久之洋	jiu zhi yang	1
+久事动娱	jiu shi dong yu	1
 久元	jiu yuan	1
 久其软件	jiu qi ruan jian	1
 久吾高科	jiu wu gao ke	1
@@ -1226,7 +1227,6 @@ XD通宝能	tong bao neng	1
 二六三	er liu san	1
 云中马	yun zhong ma	1
 云从科技	yun cong ke ji	1
-云创退	yun chuang tui	1
 云南旅游	yun nan lv you	1
 云南白药	yun nan bai yao	1
 云南能投	yun nan neng tou	1
@@ -1337,7 +1337,6 @@ XD通宝能	tong bao neng	1
 交建股份	jiao jian gu fen	1
 交投生态	jiao tou sheng tai	1
 交控科技	jiao kong ke ji	1
-交运股份	jiao yun gu fen	1
 交通银行	jiao tong yin hang	1
 亨迪药业	heng di yao ye	1
 亨通光电	heng tong guang dian	1
@@ -2147,6 +2146,7 @@ XD通宝能	tong bao neng	1
 千兴	qian xing	1
 千味央厨	qian wei yang chu	1
 千如	qian ru	1
+千岸科技	qian an ke ji	1
 千方科技	qian fang ke ji	1
 千百度	qian bai du	1
 千禾味业	qian he wei ye	1
@@ -3010,7 +3010,6 @@ XD通宝能	tong bao neng	1
 嘉实ＥＳＧ领－Ｒ	jia shi ling	1
 嘉彰	jia zhang	1
 嘉德利	jia de li	1
-嘉必优	jia bi you	1
 嘉戎技术	jia rong ji shu	1
 嘉晨智能	jia chen zhi neng	1
 嘉晶	jia jing	1
@@ -3185,7 +3184,6 @@ XD通宝能	tong bao neng	1
 国联水产	guo lian shui chan	1
 国联股份	guo lian gu fen	1
 国能日新	guo neng ri xin	1
-国脉文化	guo mai wen hua	1
 国脉科技	guo mai ke ji	1
 国航远洋	guo hang yuan yang	1
 国芯科技	guo xin ke ji	1
@@ -3430,6 +3428,7 @@ XD通宝能	tong bao neng	1
 大饮	da yin	1
 大鲁阁	da lu ge	1
 大鹏工业	da peng gong ye	1
+大鹏科CLMX	da peng ke	1
 大麦娱乐	da mai yu le	1
 大龙地产	da long di chan	1
 天下秀	tian xia xiu	1
@@ -3922,7 +3921,6 @@ XD通宝能	tong bao neng	1
 宝钢包装	bao gang bao zhuang	1
 宝钢股份	bao gang gu fen	1
 宝隆	bao long	1
-宝雅	bao ya	1
 宝鹰股份	bao ying gu fen	1
 宝鼎科技	bao ding ke ji	1
 宝龄富锦	bao ling fu jin	1
@@ -4162,7 +4160,6 @@ XD通宝能	tong bao neng	1
 川金诺	chuan jin nuo	1
 川飞	chuan fei	1
 州巧	zhou qiao	1
-工业富联	gong ye fu lian	1
 工信	gong xin	1
 工商银行	gong shang yin hang	1
 工大科雅	gong da ke ya	1
@@ -5003,6 +5000,7 @@ XD通宝能	tong bao neng	1
 新集能源	xin ji neng yuan	1
 新零售	xin ling shou	1
 新雷能	xin lei neng	1
+新风光	xin feng guang	1
 新鸿基公司	xin hong ji gong si	1
 新鸿基地产	xin hong ji di chan	1
 新鸿基地产－Ｒ	xin hong ji di chan	1
@@ -5204,7 +5202,6 @@ XD通宝能	tong bao neng	1
 春泉产业信托	chun quan chan ye xin tuo	1
 春源	chun yuan	1
 春秋电子	chun qiu dian zi	1
-春秋航空	chun qiu hang kong	1
 春立医疗	chun li yi liao	1
 春雨	chun yu	1
 春雨医疗	chun yu yi liao	1
@@ -5918,6 +5915,7 @@ XD通宝能	tong bao neng	1
 泰胜风能	tai sheng feng neng	1
 泰艺	tai yi	1
 泰茂	tai mao	1
+泰诺麦博	tai nuo mai bo	1
 泰谷	tai gu	1
 泰豪科技	tai hao ke ji	1
 泰达股份	tai da gu fen	1
@@ -6476,7 +6474,6 @@ XD通宝能	tong bao neng	1
 瑞耘	rui yun	1
 瑞联新材	rui lian xin cai	1
 瑞芯微	rui xin wei	1
-瑞贝卡	rui bei ka	1
 瑞轩	rui xuan	1
 瑞达期货	rui da qi huo	1
 瑞迈特	rui mai te	1
@@ -6757,6 +6754,7 @@ XD通宝能	tong bao neng	1
 神达	shen da	1
 神通科技	shen tong ke ji	1
 神隆	shen long	1
+神雾节能	shen wu jie neng	1
 神马电力	shen ma dian li	1
 神马股份	shen ma gu fen	1
 神驰机电	shen chi ji dian	1
@@ -7033,7 +7031,7 @@ XD通宝能	tong bao neng	1
 红豆股份	hong dou gu fen	1
 纬创	wei chuang	1
 纬德信息	wei de xin xi	1
-纬软	wei ruan	1
+纬致	wei zhi	1
 纬达光电	wei da guang dian	1
 纬颖	wei ying	1
 纳尔股份	na er gu fen	1
@@ -7087,6 +7085,7 @@ XD通宝能	tong bao neng	1
 维康药业	wei kang yao ye	1
 维海德	wei hai de	1
 维熹	wei xi	1
+维琪科技	wei qi ke ji	1
 维田	wei tian	1
 维科技术	wei ke ji shu	1
 维科精密	wei ke jing mi	1
@@ -8014,6 +8013,7 @@ XD通宝能	tong bao neng	1
 通威股份	tong wei gu fen	1
 通宇通讯	tong yu tong xun	1
 通宝光电	tong bao guang dian	1
+通宝能源	tong bao neng yuan	1
 通富微电	tong fu wei dian	1
 通易航天	tong yi hang tian	1
 通泰	tong tai	1
@@ -8401,6 +8401,7 @@ XD通宝能	tong bao neng	1
 长虹能源	chang hong neng yuan	1
 长裕集团	zhang yu ji tuan	1
 长进光子	zhang jin guang zi	1
+长鑫科技	zhang xin ke ji	1
 长阳科技	zhang yang ke ji	1
 长青科技	chang qing ke ji	1
 长青股份	chang qing gu fen	1
@@ -8807,6 +8808,8 @@ XD通宝能	tong bao neng	1
 Ａ　ＧＸ恒指备兑	heng zhi bei dui	1
 Ａ三星区块链	san xing qu kuai lian	1
 Ａ中金港元	zhong jin gang yuan	1
+Ａ中金美元	zhong jin mei yuan	1
+Ａ中金美元－Ｕ	zhong jin mei yuan	1
 Ａ华夏人币数	hua xia ren bi shu	1
 Ａ华夏人币数－Ｒ	hua xia ren bi shu	1
 Ａ华夏人民币	hua xia ren min bi	1
@@ -8821,14 +8824,13 @@ XD通宝能	tong bao neng	1
 Ａ南方港元－Ｒ	nan fang gang yuan	1
 Ａ南方美元	nan fang mei yuan	1
 Ａ南方美元－Ｕ	nan fang mei yuan	1
+Ａ南方韩国备兑	nan fang han guo bei dui	1
 Ａ博时人民币	bo shi ren min bi	1
 Ａ博时人民币－Ｒ	bo shi ren min bi	1
 Ａ博时港元	bo shi gang yuan	1
 Ａ博时美元	bo shi mei yuan	1
 Ａ博时美元－Ｒ	bo shi mei yuan	1
 Ａ博时美元－Ｕ	bo shi mei yuan	1
-Ａ工银中金美	gong yin zhong jin mei	1
-Ａ工银中金美－Ｕ	gong yin zhong jin mei	1
 Ａ恒生国指备兑	heng sheng guo zhi bei dui	1
 Ａ恒生摩根美入息	heng sheng mo gen mei ru xi	1
 Ａ恒生科技备兑	heng sheng ke ji bei dui	1
