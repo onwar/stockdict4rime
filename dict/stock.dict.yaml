@@ -3,8 +3,8 @@
 #
 # 股票名称词库（沪深北A股 + 港股 + 台湾上市/上柜）
 # 数据来源：新浪财经 / 港交所 / 台湾证交所 / 柜买中心
-# 更新时间：2026-08-31
-# 股票数量：9024
+# 更新时间：2026-09-07
+# 股票数量：9035
 #
 # 使用方法：在 rime-ice 的 cn_dicts/ 目录下放置此文件
 # 并在 rime_ice.dict.yaml 的 import_tables 中添加：
@@ -12,7 +12,7 @@
 #
 ---
 name: stock
-version: "2026-08-31"
+version: "2026-09-07"
 sort: by_weight
 ...
 
@@ -64,7 +64,6 @@ sort: by_weight
 *ST建艺	jian yi	1
 *ST开元	kai yuan	1
 *ST数源	shu yuan	1
-*ST新元	xin yuan	1
 *ST明德	ming de	1
 *ST易录	yi lu	1
 *ST春兴	chun xing	1
@@ -111,12 +110,16 @@ sort: by_weight
 *ST顾地	gu di	1
 *ST香雪	xiang xue	1
 *ST高科	gao ke	1
-C高凯	gao kai	1
+C格林	ge lin	1
+C贝特利	bei te li	1
+C马矿	ma kuang	1
 FT台湾Smart	tai wan	1
 FT台湾永续高息	tai wan yong xu gao xi	1
 FT投资级债20+	tou zi ji zhai	1
 FT洁净能源	jie jing neng yuan	1
 FT金融债10+	jin rong zhai	1
+N天博	tian bo	1
+N杰锋	jie feng	1
 ST万邦	wan bang	1
 ST三木	san mu	1
 ST东尼	dong ni	1
@@ -169,6 +172,7 @@ ST恒信	heng xin	1
 ST惠伦	hui lun	1
 ST惠程	hui cheng	1
 ST文峰	wen feng	1
+ST新元	xin yuan	1
 ST新华锦	xin hua jin	1
 ST明诚	ming cheng	1
 ST易联众	yi lian zhong	1
@@ -229,8 +233,10 @@ S佳通	jia tong	1
 TCL中环	zhong huan	1
 TCL智家	zhi jia	1
 TCL科技	ke ji	1
-XD丽人丽	li ren li	1
-XD传音控	chuan yin kong	1
+XD三美股	san mei gu	1
+XD浙版传	zhe ban chuan	1
+XD红星发	hong xing fa	1
+XD行动教	xing dong jiao	1
 一博科技	yi bo ke ji	1
 一品红	yi pin hong	1
 一彬科技	yi bin ke ji	1
@@ -392,7 +398,6 @@ XD传音控	chuan yin kong	1
 三维装备	san wei zhuang bei	1
 三维通信	san wei tong xin	1
 三羊马	san yang ma	1
-三美股份	san mei gu fen	1
 三联	san lian	1
 三联虹普	san lian hong pu	1
 三联锻造	san lian duan zao	1
@@ -643,6 +648,7 @@ XD传音控	chuan yin kong	1
 中信关键半导体	zhong xin guan jian ban dao ti	1
 中信出版	zhong xin chu ban	1
 中信博	zhong xin bo	1
+中信台日韩PCB	zhong xin tai ri han	1
 中信台湾智慧50	zhong xin tai wan zhi hui	1
 中信国际电讯	zhong xin guo ji dian xun	1
 中信小资高价30	zhong xin xiao zi gao jia	1
@@ -677,6 +683,7 @@ XD传音控	chuan yin kong	1
 中储股份	zhong chu gu fen	1
 中元股份	zhong yuan gu fen	1
 中光学	zhong guang xue	1
+中光电投控	zhong guang dian tou kong	1
 中光防雷	zhong guang fang lei	1
 中公教育	zhong gong jiao yu	1
 中公高科	zhong gong gao ke	1
@@ -1102,6 +1109,7 @@ XD传音控	chuan yin kong	1
 主动台新优势成长	zhu dong tai xin you shi cheng zhang	1
 主动台新龙头成长	zhu dong tai xin long tou cheng zhang	1
 主动国泰动能高息	zhu dong guo tai dong neng gao xi	1
+主动复华全球50	zhu dong fu hua quan qiu	1
 主动复华未来50	zhu dong fu hua wei lai	1
 主动复华金融债息	zhu dong fu hua jin rong zhai xi	1
 主动复华金融股息	zhu dong fu hua jin rong gu xi	1
@@ -1132,6 +1140,7 @@ XD传音控	chuan yin kong	1
 主动野村台湾优选	zhu dong ye cun tai wan you xuan	1
 主动野村台湾高息	zhu dong ye cun tai wan gao xi	1
 丽丰-KY	li feng	1
+丽人丽妆	li ren li zhuang	1
 丽升能源	li sheng neng yuan	1
 丽台	li tai	1
 丽婴房	li ying fang	1
@@ -1470,6 +1479,7 @@ XD传音控	chuan yin kong	1
 传奇	chuan qi	1
 传智教育	chuan zhi jiao yu	1
 传艺科技	chuan yi ke ji	1
+传音控股	chuan yin kong gu	1
 伦飞	lun fei	1
 伯特光	bo te guang	1
 伯特利	bo te li	1
@@ -2325,6 +2335,7 @@ XD传音控	chuan yin kong	1
 华森制药	hua sen zhi yao	1
 华正新材	hua zheng xin cai	1
 华民股份	hua min gu fen	1
+华汇智能	hua hui zhi neng	1
 华泰	hua tai	1
 华泰股份	hua tai gu fen	1
 华泰证券	hua tai zheng quan	1
@@ -4210,6 +4221,7 @@ XD传音控	chuan yin kong	1
 希华	xi hua	1
 希慎兴业	xi shen xing ye	1
 希荻微	xi di wei	1
+希音－Ｗ	xi yin	1
 帏翔	wei xiang	1
 帝奥微	di ao wei	1
 帝宝	di bao	1
@@ -4445,6 +4457,7 @@ XD传音控	chuan yin kong	1
 强力新材	qiang li xin cai	1
 强新	qiang xin	1
 强瑞技术	qiang rui ji shu	1
+强生*	qiang sheng	1
 强盛新	qiang sheng xin	1
 强茂	qiang mao	1
 强达电路	qiang da dian lu	1
@@ -5269,7 +5282,6 @@ XD传音控	chuan yin kong	1
 普莱德	pu lai de	1
 普莱柯	pu lai ke	1
 普蕊斯	pu rui si	1
-普诚	pu cheng	1
 普路通	pu lu tong	1
 普邦股份	pu bang gu fen	1
 普门科技	pu men ke ji	1
@@ -6016,7 +6028,6 @@ XD传音控	chuan yin kong	1
 浙江鼎力	zhe jiang ding li	1
 浙江龙盛	zhe jiang long sheng	1
 浙海德曼	zhe hai de man	1
-浙版传媒	zhe ban chuan mei	1
 浙矿股份	zhe kuang gu fen	1
 浙能电力	zhe neng dian li	1
 浦东建设	pu dong jian she	1
@@ -6388,6 +6399,7 @@ XD传音控	chuan yin kong	1
 玉山严选非投债	yu shan yan xuan fei tou zhai	1
 玉山全球蓝筹100	yu shan quan qiu lan chou	1
 玉山市值动能50	yu shan shi zhi dong neng	1
+玉山未来全球算力	yu shan wei lai quan qiu suan li	1
 玉山金	yu shan jin	1
 玉晶光	yu jing guang	1
 玉禾田	yu he tian	1
@@ -6578,8 +6590,8 @@ XD传音控	chuan yin kong	1
 百川畅银	bai chuan chang yin	1
 百川股份	bai chuan gu fen	1
 百川能源	bai chuan neng yuan	1
-百度集团－ＳＷ	bai du ji tuan	1
-百度集团－ＳＷＲ	bai du ji tuan	1
+百度集团－Ｗ	bai du ji tuan	1
+百度集团－ＷＲ	bai du ji tuan	1
 百德	bai de	1
 百徽	bai hui	1
 百普赛斯	bai pu sai si	1
@@ -6640,7 +6652,6 @@ XD传音控	chuan yin kong	1
 益安	yi an	1
 益客食品	yi ke shi pin	1
 益张	yi zhang	1
-益得	yi de	1
 益方生物	yi fang sheng wu	1
 益民集团	yi min ji tuan	1
 益生股份	yi sheng gu fen	1
@@ -7034,7 +7045,6 @@ XD传音控	chuan yin kong	1
 红太阳	hong tai yang	1
 红旗连锁	hong qi lian suo	1
 红日药业	hong ri yao ye	1
-红星发展	hong xing fa zhan	1
 红木-KY	hong mu	1
 红板科技	hong ban ke ji	1
 红棉股份	hong mian gu fen	1
@@ -7682,7 +7692,6 @@ XD传音控	chuan yin kong	1
 融程电	rong cheng dian	1
 蠡湖股份	li hu gu fen	1
 行云科技	xing yun ke ji	1
-行动教育	xing dong jiao yu	1
 衢州东峰	qu zhou dong feng	1
 衢州发展	qu zhou fa zhan	1
 裕元集团	yu yuan ji tuan	1
@@ -8219,6 +8228,7 @@ XD传音控	chuan yin kong	1
 金迪克	jin di ke	1
 金逸影视	jin yi ying shi	1
 金道科技	jin dao ke ji	1
+金钛股份	jin tai gu fen	1
 金钟股份	jin zhong gu fen	1
 金钼股份	jin mu gu fen	1
 金银河	jin yin he	1
@@ -8688,6 +8698,7 @@ XD传音控	chuan yin kong	1
 高侨	gao qiao	1
 高兴昌	gao xing chang	1
 高凌信息	gao ling xin xi	1
+高凯技术	gao kai ji shu	1
 高力	gao li	1
 高华科技	gao hua ke ji	1
 高德红外	gao de hong wai	1
