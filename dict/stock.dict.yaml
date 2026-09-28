@@ -3,8 +3,8 @@
 #
 # 股票名称词库（沪深北A股 + 港股 + 台湾上市/上柜）
 # 数据来源：新浪财经 / 港交所 / 台湾证交所 / 柜买中心
-# 更新时间：2026-09-21
-# 股票数量：9020
+# 更新时间：2026-09-28
+# 股票数量：9047
 #
 # 使用方法：在 rime-ice 的 cn_dicts/ 目录下放置此文件
 # 并在 rime_ice.dict.yaml 的 import_tables 中添加：
@@ -12,7 +12,7 @@
 #
 ---
 name: stock
-version: "2026-09-21"
+version: "2026-09-28"
 sort: by_weight
 ...
 
@@ -110,6 +110,7 @@ sort: by_weight
 *ST顾地	gu di	1
 *ST香雪	xiang xue	1
 *ST高科	gao ke	1
+C中塑	zhong su	1
 C信诺维	xin nuo wei	1
 C沈鼓集团	shen gu ji tuan	1
 FT台湾Smart	tai wan	1
@@ -173,7 +174,6 @@ ST文峰	wen feng	1
 ST新元	xin yuan	1
 ST新华锦	xin hua jin	1
 ST明诚	ming cheng	1
-ST易联众	yi lian zhong	1
 ST易购	yi gou	1
 ST星农	xing nong	1
 ST晨鸣	chen ming	1
@@ -231,27 +231,15 @@ S佳通	jia tong	1
 TCL中环	zhong huan	1
 TCL智家	zhi jia	1
 TCL科技	ke ji	1
-XD上海医药	shang hai yi yao	1
-XD中科软	zhong ke ruan	1
-XD佰维存储	bai wei cun chu	1
-XD国药现代	guo yao xian dai	1
-XD圣晖系统集成集团	sheng hui xi tong ji cheng ji tuan	1
-XD基蛋生物	ji dan sheng wu	1
-XD大元泵业	da yuan beng ye	1
-XD宏盛华源铁塔集团	hong sheng hua yuan tie ta ji tuan	1
-XD康尼机电	kang ni ji dian	1
-XD成都银行	cheng du yin hang	1
-XD新化股份	xin hua gu fen	1
-XD新睿电	xin rui dian	1
-XD昊海生物科技	hao hai sheng wu ke ji	1
-XD泛微网络	fan wei wang luo	1
-XD浙江杭可科技	zhe jiang hang ke ke ji	1
-XD睿创微纳	rui chuang wei na	1
-XD美湖股份	mei hu gu fen	1
-XD航天工程	hang tian gong cheng	1
-XD苏州华兴源创科技	su zhou hua xing yuan chuang ke ji	1
-XD隧道股份	sui dao gu fen	1
-XD雅戈尔	ya ge er	1
+XD三元股份	san yuan gu fen	1
+XD三六零	san liu ling	1
+XD东威科技	dong wei ke ji	1
+XD中触媒股份	zhong chu mei gu fen	1
+XD兴业股份	xing ye gu fen	1
+XD千岸科	qian an ke	1
+XD宝光股份	bao guang gu fen	1
+XD朗博科技	lang bo ke ji	1
+XD骄成超声波	jiao cheng chao sheng bo	1
 一博科技	yi bo ke ji	1
 一品红	yi pin hong	1
 一彬科技	yi bin ke ji	1
@@ -342,9 +330,7 @@ XD雅戈尔	ya ge er	1
 三佳科技	san jia ke ji	1
 三元基因	san yuan ji yin	1
 三元生物	san yuan sheng wu	1
-三元股份	san yuan gu fen	1
 三全食品	san quan shi pin	1
-三六零	san liu ling	1
 三利谱	san li pu	1
 三力制药	san li zhi yao	1
 三协电机	san xie dian ji	1
@@ -509,6 +495,7 @@ XD雅戈尔	ya ge er	1
 世纪华通	shi ji hua tong	1
 世纪天鸿	shi ji tian hong	1
 世纪恒通	shi ji heng tong	1
+世纪数码	shi ji shu ma	1
 世纪瑞尔	shi ji rui er	1
 世纪钢	shi ji gang	1
 世纪风电	shi ji feng dian	1
@@ -548,7 +535,6 @@ XD雅戈尔	ya ge er	1
 东和钢铁	dong he gang tie	1
 东哥游艇	dong ge you ting	1
 东土科技	dong tu ke ji	1
-东威科技	dong wei ke ji	1
 东安动力	dong an dong li	1
 东宏股份	dong hong gu fen	1
 东宝生物	dong bao sheng wu	1
@@ -623,6 +609,7 @@ XD雅戈尔	ya ge er	1
 东芯股份	dong xin gu fen	1
 东莞农商银行	dong guan nong shang yin hang	1
 东莞控股	dong guan kong gu	1
+东讯	dong xun	1
 东诚药业	dong cheng yao ye	1
 东贝集团	dong bei ji tuan	1
 东软载波	dong ruan zai bo	1
@@ -987,6 +974,7 @@ XD雅戈尔	ya ge er	1
 中科磁业	zhong ke ci ye	1
 中科美菱	zhong ke mei ling	1
 中科蓝讯	zhong ke lan xun	1
+中科软	zhong ke ruan	1
 中科金财	zhong ke jin cai	1
 中科闻歌	zhong ke wen ge	1
 中科飞测	zhong ke fei ce	1
@@ -1040,7 +1028,6 @@ XD雅戈尔	ya ge er	1
 中裕能源	zhong yu neng yuan	1
 中视	zhong shi	1
 中视传媒	zhong shi chuan mei	1
-中触媒股份	zhong chu mei gu fen	1
 中设咨询	zhong she zi xun	1
 中诚咨询	zhong cheng zi xun	1
 中谷物流	zhong gu wu liu	1
@@ -1512,6 +1499,7 @@ XD雅戈尔	ya ge er	1
 佰奥智能	bai ao zhi neng	1
 佰泽医疗	bai ze yi liao	1
 佰研	bai yan	1
+佰维存储	bai wei cun chu	1
 佰鸿	bai hong	1
 佳世达	jia shi da	1
 佳云科技	jia yun ke ji	1
@@ -1849,7 +1837,6 @@ XD雅戈尔	ya ge er	1
 关中	guan zhong	1
 关贸	guan mao	1
 兴业科技	xing ye ke ji	1
-兴业股份	xing ye gu fen	1
 兴业证券	xing ye zheng quan	1
 兴业银行	xing ye yin hang	1
 兴业银锡	xing ye yin xi	1
@@ -1974,11 +1961,13 @@ XD雅戈尔	ya ge er	1
 凯盛新材	kai sheng xin cai	1
 凯盛新能	kai sheng xin neng	1
 凯盛科技	kai sheng ke ji	1
+凯硕	kai shuo	1
 凯美	kai mei	1
 凯美特气	kai mei te qi	1
 凯腾精工	kai teng jing gong	1
 凯莱英	kai lai ying	1
 凯赛生物	kai sai sheng wu	1
+凯达重工	kai da zhong gong	1
 凯迪股份	kai di gu fen	1
 凯钰	kai yu	1
 凯龙股份	kai long gu fen	1
@@ -2151,7 +2140,6 @@ XD雅戈尔	ya ge er	1
 千兴	qian xing	1
 千味央厨	qian wei yang chu	1
 千如	qian ru	1
-千岸科技	qian an ke ji	1
 千方科技	qian fang ke ji	1
 千百度	qian bai du	1
 千禾味业	qian he wei ye	1
@@ -2341,6 +2329,7 @@ XD雅戈尔	ya ge er	1
 华汇智能	hua hui zhi neng	1
 华沿机器人	hua yan ji qi ren	1
 华泰	hua tai	1
+华泰盈科港韩半导	hua tai ying ke gang han ban dao	1
 华泰股份	hua tai gu fen	1
 华泰证券	hua tai zheng quan	1
 华洋精机	hua yang jing ji	1
@@ -2527,6 +2516,7 @@ XD雅戈尔	ya ge er	1
 南方亚太房托	nan fang ya tai fang tuo	1
 南方亚洲科技股息	nan fang ya zhou ke ji gu xi	1
 南方传媒	nan fang chuan mei	1
+南方先锋科技	nan fang xian feng ke ji	1
 南方太阳能	nan fang tai yang neng	1
 南方恒指ＥＴＦ	nan fang heng zhi	1
 南方恒生生科	nan fang heng sheng sheng ke	1
@@ -2601,6 +2591,7 @@ XD雅戈尔	ya ge er	1
 博时廿美债Ａ－Ｕ	bo shi nian mei zhai	1
 博时比特币	bo shi bi te bi	1
 博时比特币－Ｕ	bo shi bi te bi	1
+博时港韩半导体	bo shi gang han ban dao ti	1
 博时科创５０	bo shi ke chuang	1
 博时科创５０－Ｒ	bo shi ke chuang	1
 博时２０美债	bo shi mei zhai	1
@@ -2982,6 +2973,7 @@ XD雅戈尔	ya ge er	1
 唯特偶	wei te ou	1
 唯科科技	wei ke ke ji	1
 唯赛勃科技	wei sai bo ke ji	1
+商丞	shang cheng	1
 商之器	shang zhi qi	1
 商亿-KY	shang yi	1
 商汤－Ｗ	shang tang	1
@@ -3150,6 +3142,12 @@ XD雅戈尔	ya ge er	1
 国泰标普低波高息	guo tai biao pu di bo gao xi	1
 国泰永续高股息	guo tai yong xu gao gu xi	1
 国泰海通	guo tai hai tong	1
+国泰海通科技	guo tai hai tong ke ji	1
+国泰海通科技－Ｒ	guo tai hai tong ke ji	1
+国泰海通科技－Ｕ	guo tai hai tong ke ji	1
+国泰海通资源	guo tai hai tong zi yuan	1
+国泰海通资源－Ｒ	guo tai hai tong zi yuan	1
+国泰海通资源－Ｕ	guo tai hai tong zi yuan	1
 国泰特	guo tai te	1
 国泰环保	guo tai huan bao	1
 国泰网路资安	guo tai wang lu zi an	1
@@ -3198,6 +3196,7 @@ XD雅戈尔	ya ge er	1
 国茂股份	guo mao gu fen	1
 国药一致	guo yao yi zhi	1
 国药控股	guo yao kong gu	1
+国药现代	guo yao xian dai	1
 国药股份	guo yao gu fen	1
 国货航	guo huo hang	1
 国轩高科	guo xuan gao ke	1
@@ -3225,6 +3224,7 @@ XD雅戈尔	ya ge er	1
 圣元环保	sheng yuan huan bao	1
 圣农发展	sheng nong fa zhan	1
 圣晖*	sheng hui	1
+圣晖系统集成集团	sheng hui xi tong ji cheng ji tuan	1
 圣泉集团	sheng quan ji tuan	1
 圣湘生物	sheng xiang sheng wu	1
 圣诺生物	sheng nuo sheng wu	1
@@ -3265,6 +3265,7 @@ XD雅戈尔	ya ge er	1
 基泰	ji tai	1
 基石药业－Ｂ	ji shi yao ye	1
 基米-创	ji mi chuang	1
+基蛋生物	ji dan sheng wu	1
 堡达	bao da	1
 堤维西	di wei xi	1
 堤维西甲特	di wei xi jia te	1
@@ -3337,6 +3338,7 @@ XD雅戈尔	ya ge er	1
 大众公用	da zhong gong yong	1
 大众控	da zhong kong	1
 大位科技	da wei ke ji	1
+大元泵业	da yuan beng ye	1
 大全能源	da quan neng yuan	1
 大冢	da zhong	1
 大北农	da bei nong	1
@@ -3382,6 +3384,7 @@ XD雅戈尔	ya ge er	1
 大悦城	da yue cheng	1
 大成	da cheng	1
 大成钢	da cheng gang	1
+大成银河港马大型	da cheng yin he gang ma da xing	1
 大拓-KY	da tuo	1
 大新金融	da xin jin rong	1
 大新银行集团	da xin yin hang ji tuan	1
@@ -3596,6 +3599,7 @@ XD雅戈尔	ya ge er	1
 太阳能	tai yang neng	1
 太龙股份	tai long gu fen	1
 太龙药业	tai long yao ye	1
+奇偶	ji ou	1
 奇安信集团	qi an xin ji tuan	1
 奇富科技－Ｓ	qi fu ke ji	1
 奇德新材	qi de xin cai	1
@@ -3858,6 +3862,7 @@ XD雅戈尔	ya ge er	1
 宏璟	hong jing	1
 宏益	hong yi	1
 宏盛	hong sheng	1
+宏盛华源铁塔集团	hong sheng hua yuan tie ta ji tuan	1
 宏盛股份	hong sheng gu fen	1
 宏硕系统	hong shuo xi tong	1
 宏碁	hong qi	1
@@ -3893,7 +3898,6 @@ XD雅戈尔	ya ge er	1
 宝丰能源	bao feng neng yuan	1
 宝丽迪	bao li di	1
 宝信软件	bao xin ruan jian	1
-宝光股份	bao guang gu fen	1
 宝兰德软件	bao lan de ruan jian	1
 宝利国际	bao li guo ji	1
 宝利徕	bao li lai	1
@@ -4264,6 +4268,12 @@ XD雅戈尔	ya ge er	1
 广华-KY	guang hua	1
 广博股份	guang bo gu fen	1
 广厦环能	guang sha huan neng	1
+广发全球金属	guang fa quan qiu jin shu	1
+广发全球金属－Ｒ	guang fa quan qiu jin shu	1
+广发全球金属－Ｕ	guang fa quan qiu jin shu	1
+广发港美科技	guang fa gang mei ke ji	1
+广发港美科技－Ｒ	guang fa gang mei ke ji	1
+广发港美科技－Ｕ	guang fa gang mei ke ji	1
 广发证券	guang fa zheng quan	1
 广合科技	guang he ke ji	1
 广和通	guang he tong	1
@@ -4330,6 +4340,7 @@ XD雅戈尔	ya ge er	1
 康和证	kang he zheng	1
 康哲药业	kang zhe yao ye	1
 康宁杰瑞制药－Ｂ	kang ning jie rui zhi yao	1
+康尼机电	kang ni ji dian	1
 康师傅-DR	kang shi fu	1
 康师傅控股	kang shi fu kong gu	1
 康希诺生物	kang xi nuo sheng wu	1
@@ -4643,6 +4654,7 @@ XD雅戈尔	ya ge er	1
 恒生Ａ股低碳－Ｒ	heng sheng gu di tan	1
 恒生Ａ股龙头	heng sheng gu long tou	1
 恒生Ａ股龙头－Ｒ	heng sheng gu long tou	1
+恒生ＡＩ　ＥＴＦ	heng sheng	1
 恒申新材	heng shen xin cai	1
 恒盛能源	heng sheng neng yuan	1
 恒立液压	heng li ye ya	1
@@ -4729,6 +4741,7 @@ XD雅戈尔	ya ge er	1
 成都燃气	cheng du ran qi	1
 成都纵横	cheng du zong heng	1
 成都路桥	cheng du lu qiao	1
+成都银行	cheng du yin hang	1
 成霖	cheng lin	1
 成飞集成	cheng fei ji cheng	1
 我乐家居	wo le jia ju	1
@@ -4891,6 +4904,7 @@ XD雅戈尔	ya ge er	1
 新凤鸣	xin feng ming	1
 新力金融	xin li jin rong	1
 新劲刚	xin jin gang	1
+新化股份	xin hua gu fen	1
 新北洋	xin bei yang	1
 新华	xin hua	1
 新华传媒	xin hua chuan mei	1
@@ -4971,6 +4985,7 @@ XD雅戈尔	ya ge er	1
 新益昌科技	xin yi chang ke ji	1
 新盛力	xin sheng li	1
 新相微	xin xiang wei	1
+新睿电子	xin rui dian zi	1
 新研股份	xin yan gu fen	1
 新秀丽	xin xiu li	1
 新筑股份	xin zhu gu fen	1
@@ -5105,6 +5120,7 @@ XD雅戈尔	ya ge er	1
 昊华能源	hao hua neng yuan	1
 昊帆生物	hao fan sheng wu	1
 昊志机电	hao zhi ji dian	1
+昊海生物科技	hao hai sheng wu ke ji	1
 昌红科技	chang hong ke ji	1
 明冠新材料	ming guan xin cai liao	1
 明基医	ming ji yi	1
@@ -5162,6 +5178,7 @@ XD雅戈尔	ya ge er	1
 易普力	yi pu li	1
 易点天下	yi dian tian xia	1
 易瑞生物	yi rui sheng wu	1
+易联众	yi lian zhong	1
 易鑫集团	yi xin ji tuan	1
 易飞网	yi fei wang	1
 昕奇云端	xin qi yun duan	1
@@ -5357,7 +5374,6 @@ XD雅戈尔	ya ge er	1
 朋亿*	peng yi	1
 朋程	peng cheng	1
 朗信电气	lang xin dian qi	1
-朗博科技	lang bo ke ji	1
 朗坤科技	lang kun ke ji	1
 朗姿股份	lang zi gu fen	1
 朗威股份	lang wei gu fen	1
@@ -5494,7 +5510,6 @@ XD雅戈尔	ya ge er	1
 桂发祥	gui fa xiang	1
 桂林三金	gui lin san jin	1
 桂林旅游	gui lin lv you	1
-桂田文创	gui tian wen chuang	1
 桂盟	gui meng	1
 桃李面包	tao li mian bao	1
 桐昆股份	tong kun gu fen	1
@@ -5528,6 +5543,7 @@ XD雅戈尔	ya ge er	1
 森马服饰	sen ma fu shi	1
 森鹰窗业	sen ying chuang ye	1
 森麒麟	sen qi lin	1
+棱研科技*-创	leng yan ke ji chuang	1
 楚天科技	chu tian ke ji	1
 楚天高速	chu tian gao su	1
 楚天龙	chu tian long	1
@@ -5773,6 +5789,7 @@ XD雅戈尔	ya ge er	1
 汉来美食	han lai mei shi	1
 汉桑科技	han sang ke ji	1
 汉森制药	han sen zhi yao	1
+汉测	han ce	1
 汉王科技	han wang ke ji	1
 汉田生技	han tian sheng ji	1
 汉磊	han lei	1
@@ -5882,6 +5899,7 @@ XD雅戈尔	ya ge er	1
 法本信息	fa ben xin xi	1
 法狮龙	fa shi long	1
 泛亚微透	fan ya wei tou	1
+泛微网络	fan wei wang luo	1
 泛德永业	fan de yong ye	1
 泛海统联精密制造	fan hai tong lian jing mi zhi zao	1
 泛玮材料	fan wei cai liao	1
@@ -6009,6 +6027,7 @@ XD雅戈尔	ya ge er	1
 浙江建投	zhe jiang jian tou	1
 浙江恒威	zhe jiang heng wei	1
 浙江新能	zhe jiang xin neng	1
+浙江杭可科技	zhe jiang hang ke ke ji	1
 浙江正特	zhe jiang zheng te	1
 浙江永强	zhe jiang yong qiang	1
 浙江沪杭甬	zhe jiang hu hang yong	1
@@ -6604,6 +6623,7 @@ XD雅戈尔	ya ge er	1
 百洋股份	bai yang gu fen	1
 百济神州	bai ji shen zhou	1
 百润股份	bai run gu fen	1
+百瑞吉	bai rui ji	1
 百甲科技	bai jia ke ji	1
 百纳千成	bai na qian cheng	1
 百联股份	bai lian gu fen	1
@@ -6661,7 +6681,6 @@ XD雅戈尔	ya ge er	1
 益生股份	yi sheng gu fen	1
 益登	yi deng	1
 益盛药业	yi sheng yao ye	1
-益航	yi hang	1
 益诺思生物	yi nuo si sheng wu	1
 盐 田 港	yan tian gang	1
 盐津铺子	yan jin pu zi	1
@@ -6706,6 +6725,7 @@ XD雅戈尔	ya ge er	1
 真兰仪表	zhen lan yi biao	1
 真爱美家	zhen ai mei jia	1
 真视通	zhen shi tong	1
+睿创微纳	rui chuang wei na	1
 睿智医药	rui zhi yi yao	1
 睿生光电	rui sheng guang dian	1
 睿能科技	rui neng ke ji	1
@@ -7002,7 +7022,6 @@ XD雅戈尔	ya ge er	1
 精成科	jing cheng ke	1
 精技	jing ji	1
 精拓科	jing tuo ke	1
-精星	jing xing	1
 精智达技术	jing zhi da ji shu	1
 精材	jing cai	1
 精测	jing ce	1
@@ -7189,6 +7208,7 @@ XD雅戈尔	ya ge er	1
 美新科技	mei xin ke ji	1
 美时	mei shi	1
 美格智能	mei ge zhi neng	1
+美湖股份	mei hu gu fen	1
 美琪玛	mei qi ma	1
 美瑞新材	mei rui xin cai	1
 美畅股份	mei chang gu fen	1
@@ -7438,6 +7458,7 @@ XD雅戈尔	ya ge er	1
 航天动力	hang tian dong li	1
 航天南湖	hang tian nan hu	1
 航天发展	hang tian fa zhan	1
+航天工程	hang tian gong cheng	1
 航天彩虹	hang tian cai hong	1
 航天晨光	hang tian chen guang	1
 航天智装	hang tian zhi zhuang	1
@@ -7470,6 +7491,7 @@ XD雅戈尔	ya ge er	1
 艾恩特	ai en te	1
 艾森股份	ai sen gu fen	1
 艾比森	ai bi sen	1
+艾笛森	ai di sen	1
 艾罗能源	ai luo neng yuan	1
 艾美特-KY	ai mei te	1
 艾能聚	ai neng ju	1
@@ -7512,6 +7534,7 @@ XD雅戈尔	ya ge er	1
 苏大维格	su da wei ge	1
 苏奥传感	su ao chuan gan	1
 苏宁环球	su ning huan qiu	1
+苏州华兴源创科技	su zhou hua xing yuan chuang ke ji	1
 苏州固锝	su zhou gu de	1
 苏州国芯科技	su zhou guo xin ke ji	1
 苏州天脉	su zhou tian mai	1
@@ -8016,6 +8039,7 @@ XD雅戈尔	ya ge er	1
 连云港	lian yun gang	1
 连城数控	lian cheng shu kong	1
 连宇	lian yu	1
+连展投控	lian zhan tou kong	1
 迦南智能	jia nan zhi neng	1
 迦南科技	jia nan ke ji	1
 迪哲医药	di zhe yi yao	1
@@ -8499,6 +8523,7 @@ XD雅戈尔	ya ge er	1
 隆达超合金股份	long da chao he jin gu fen	1
 隆鑫通用	long xin tong yong	1
 隆铭绿能	long ming lv neng	1
+隧道股份	sui dao gu fen	1
 隽扬	juan yang	1
 雃博	qian bo	1
 雄塑科技	xiong su ke ji	1
@@ -8509,6 +8534,7 @@ XD雅戈尔	ya ge er	1
 雅克科技	ya ke ke ji	1
 雅创电子	ya chuang dian zi	1
 雅化集团	ya hua ji tuan	1
+雅戈尔	ya ge er	1
 雅本化学	ya ben hua xue	1
 雅特力-KY	ya te li	1
 雅生活服务	ya sheng huo fu wu	1
@@ -8675,7 +8701,6 @@ XD雅戈尔	ya ge er	1
 驰诚股份	chi cheng gu fen	1
 驱动力	qu dong li	1
 驻龙	zhu long	1
-骄成超声波	jiao cheng chao sheng bo	1
 骅升	hua sheng	1
 骅宏资	hua hong zi	1
 骅讯	hua xun	1
@@ -8861,6 +8886,7 @@ XD雅戈尔	ya ge er	1
 Ａ恒生科技备兑	heng sheng ke ji bei dui	1
 Ａ惠理人民币	hui li ren min bi	1
 Ａ惠理人民币－Ｒ	hui li ren min bi	1
+Ａ惠理光通讯	hui li guang tong xun	1
 Ａ惠理港元	hui li gang yuan	1
 Ａ惠理美元	hui li mei yuan	1
 Ａ惠理美元－Ｕ	hui li mei yuan	1
@@ -8903,6 +8929,7 @@ XD雅戈尔	ya ge er	1
 ＦＧ恒生红利	heng sheng hong li	1
 ＦＧ恒生红利－Ｒ	heng sheng hong li	1
 ＦＧ恒生红利－Ｕ	heng sheng hong li	1
+ＦＧ机器人	ji qi ren	1
 ＦＧＸ原油	yuan you	1
 ＦＩ二华夏纳一百	er hua xia na yi bai	1
 ＦＩ二南方国指	er nan fang guo zhi	1
